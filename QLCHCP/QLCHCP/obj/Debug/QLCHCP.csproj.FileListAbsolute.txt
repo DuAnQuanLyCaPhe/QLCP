@@ -1,0 +1,12 @@
+D:\Program File (K.N)\GitHub\Back-End\C#\CoffeeStoreManager\QLCHCP\QLCHCP\bin\Debug\QLCHCP.exe.config
+D:\Program File (K.N)\GitHub\Back-End\C#\CoffeeStoreManager\QLCHCP\QLCHCP\bin\Debug\QLCHCP.exe
+D:\Program File (K.N)\GitHub\Back-End\C#\CoffeeStoreManager\QLCHCP\QLCHCP\bin\Debug\QLCHCP.pdb
+D:\Program File (K.N)\GitHub\Back-End\C#\CoffeeStoreManager\QLCHCP\QLCHCP\bin\Debug\MaterialSkin.dll
+D:\Program File (K.N)\GitHub\Back-End\C#\CoffeeStoreManager\QLCHCP\QLCHCP\obj\Debug\QLCHCP.csproj.AssemblyReference.cache
+D:\Program File (K.N)\GitHub\Back-End\C#\CoffeeStoreManager\QLCHCP\QLCHCP\obj\Debug\QLCHCP.Form1.resources
+D:\Program File (K.N)\GitHub\Back-End\C#\CoffeeStoreManager\QLCHCP\QLCHCP\obj\Debug\QLCHCP.Properties.Resources.resources
+D:\Program File (K.N)\GitHub\Back-End\C#\CoffeeStoreManager\QLCHCP\QLCHCP\obj\Debug\QLCHCP.csproj.GenerateResource.cache
+D:\Program File (K.N)\GitHub\Back-End\C#\CoffeeStoreManager\QLCHCP\QLCHCP\obj\Debug\QLCHCP.csproj.CoreCompileInputs.cache
+D:\Program File (K.N)\GitHub\Back-End\C#\CoffeeStoreManager\QLCHCP\QLCHCP\obj\Debug\QLCHCP.csproj.CopyComplete
+D:\Program File (K.N)\GitHub\Back-End\C#\CoffeeStoreManager\QLCHCP\QLCHCP\obj\Debug\QLCHCP.exe
+D:\Program File (K.N)\GitHub\Back-End\C#\CoffeeStoreManager\QLCHCP\QLCHCP\obj\Debug\QLCHCP.pdb

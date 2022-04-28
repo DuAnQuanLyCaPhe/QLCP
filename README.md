@@ -1,2 +1,2 @@
-# QLCP
-Dự Án Quản Lý Cửa Hàng Cà Phê Của Nhóm 3
+# CoffeeStoreManager
+ Dự án tốt nghiệp môn quản lý bán hàng của nhóm 3
