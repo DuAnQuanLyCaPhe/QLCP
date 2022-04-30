@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QL_quancafe", "QL_quancafe\QL_quancafe.csproj", "{3B2E1C10-33D6-41DB-A37A-FAB300349B49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class_QLcafe", "Class_QLcafe\Class_QLcafe.csproj", "{730B3166-A3F7-48C5-B07A-D0FA7792CFC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B2E1C10-33D6-41DB-A37A-FAB300349B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B2E1C10-33D6-41DB-A37A-FAB300349B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B2E1C10-33D6-41DB-A37A-FAB300349B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B2E1C10-33D6-41DB-A37A-FAB300349B49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{730B3166-A3F7-48C5-B07A-D0FA7792CFC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{730B3166-A3F7-48C5-B07A-D0FA7792CFC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{730B3166-A3F7-48C5-B07A-D0FA7792CFC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{730B3166-A3F7-48C5-B07A-D0FA7792CFC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5916EEB-73BD-4D57-AF08-23B103A0A630}
+	EndGlobalSection
+EndGlobal
