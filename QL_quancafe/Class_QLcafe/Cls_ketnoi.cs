@@ -10,6 +10,6 @@ namespace Class_QLcafe
 {
     public class Cls_ketnoi
     {
-        public static SqlConnection qlcf = new SqlConnection(@"Server=DESKTOP-78BPEV2\SQLEXPRESS;Database=QuanLyQuanCafe;Integrated Security=true");
+        public static SqlConnection qlcf = new SqlConnection(@"Server=DESKTOP-MC\SQLEXPRESS;Database=QuanLyQuanCafe;Integrated Security=true");
     }
 }

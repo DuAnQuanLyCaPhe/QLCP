@@ -6,3 +6,11 @@ D:\Quản lý bán hàng\QL_quancafe\Class_QLcafe\obj\Debug\Class_QLcafe.dll
 D:\Quản lý bán hàng\QL_quancafe\Class_QLcafe\obj\Debug\Class_QLcafe.pdb
 D:\Quản lý bán hàng\QL_quancafe\Class_QLcafe\bin\Debug\MaterialSkin.dll
 D:\Quản lý bán hàng\QL_quancafe\Class_QLcafe\obj\Debug\Class_QLcafe.csproj.CopyComplete
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Class_QLcafe\bin\Debug\Class_QLcafe.dll
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Class_QLcafe\bin\Debug\Class_QLcafe.pdb
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Class_QLcafe\bin\Debug\MaterialSkin.dll
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Class_QLcafe\obj\Debug\Class_QLcafe.csproj.AssemblyReference.cache
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Class_QLcafe\obj\Debug\Class_QLcafe.csproj.CoreCompileInputs.cache
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Class_QLcafe\obj\Debug\Class_QLcafe.csproj.CopyComplete
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Class_QLcafe\obj\Debug\Class_QLcafe.dll
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Class_QLcafe\obj\Debug\Class_QLcafe.pdb
