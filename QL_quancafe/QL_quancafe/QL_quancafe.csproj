@@ -51,7 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountProfile.cs" />
+    <Compile Include="AccountProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AccountProfile.Designer.cs">
       <DependentUpon>AccountProfile.cs</DependentUpon>
     </Compile>
@@ -75,7 +77,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TableManager.cs" />
+    <Compile Include="TableManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TableManager.Designer.cs">
       <DependentUpon>TableManager.cs</DependentUpon>
     </Compile>
