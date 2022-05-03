@@ -34,6 +34,15 @@ namespace QL_quancafe
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
+            this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
+            this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -115,17 +124,13 @@ namespace QL_quancafe
             this.panel25 = new System.Windows.Forms.Panel();
             this.txt_user_account = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
-            this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
-            this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
-            this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
-            this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
-            this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
-            this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.materialCard5.SuspendLayout();
+            this.materialCard4.SuspendLayout();
+            this.materialCard3.SuspendLayout();
+            this.materialCard2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -158,11 +163,6 @@ namespace QL_quancafe
             this.panel23.SuspendLayout();
             this.panel24.SuspendLayout();
             this.panel25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.materialCard2.SuspendLayout();
-            this.materialCard3.SuspendLayout();
-            this.materialCard4.SuspendLayout();
-            this.materialCard5.SuspendLayout();
             this.SuspendLayout();
             // 
             // imageList1
@@ -187,14 +187,14 @@ namespace QL_quancafe
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialTabControl1.ImageList = this.imageList1;
+            this.materialTabControl1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.materialTabControl1.Location = new System.Drawing.Point(3, 64);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
-            this.materialTabControl1.RightToLeftLayout = true;
             this.materialTabControl1.SelectedIndex = 0;
             this.materialTabControl1.ShowToolTips = true;
-            this.materialTabControl1.Size = new System.Drawing.Size(844, 502);
+            this.materialTabControl1.Size = new System.Drawing.Size(944, 502);
             this.materialTabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -207,12 +207,156 @@ namespace QL_quancafe
             this.tabPage1.ImageKey = "guest.png";
             this.tabPage1.Location = new System.Drawing.Point(4, 39);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage1.Size = new System.Drawing.Size(836, 459);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(936, 459);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thành Viên";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // materialCard5
+            // 
+            this.materialCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard5.Controls.Add(this.materialButton1);
+            this.materialCard5.Depth = 0;
+            this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard5.Location = new System.Drawing.Point(407, 6);
+            this.materialCard5.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard5.Name = "materialCard5";
+            this.materialCard5.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard5.Size = new System.Drawing.Size(459, 389);
+            this.materialCard5.TabIndex = 5;
+            // 
+            // materialButton1
+            // 
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = null;
+            this.materialButton1.Location = new System.Drawing.Point(193, 54);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Size = new System.Drawing.Size(158, 36);
+            this.materialButton1.TabIndex = 0;
+            this.materialButton1.Text = "materialButton1";
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            // 
+            // materialCard4
+            // 
+            this.materialCard4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard4.Controls.Add(this.materialButton6);
+            this.materialCard4.Depth = 0;
+            this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard4.Location = new System.Drawing.Point(277, 402);
+            this.materialCard4.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard4.Name = "materialCard4";
+            this.materialCard4.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard4.Size = new System.Drawing.Size(122, 52);
+            this.materialCard4.TabIndex = 4;
+            // 
+            // materialButton6
+            // 
+            this.materialButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton6.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton6.Depth = 0;
+            this.materialButton6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton6.HighEmphasis = true;
+            this.materialButton6.Icon = null;
+            this.materialButton6.Location = new System.Drawing.Point(5, 5);
+            this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton6.Name = "materialButton6";
+            this.materialButton6.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton6.Size = new System.Drawing.Size(112, 42);
+            this.materialButton6.TabIndex = 2;
+            this.materialButton6.Text = "Xóa";
+            this.materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton6.UseAccentColor = false;
+            this.materialButton6.UseVisualStyleBackColor = true;
+            // 
+            // materialCard3
+            // 
+            this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard3.Controls.Add(this.materialButton5);
+            this.materialCard3.Depth = 0;
+            this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard3.Location = new System.Drawing.Point(139, 402);
+            this.materialCard3.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard3.Name = "materialCard3";
+            this.materialCard3.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard3.Size = new System.Drawing.Size(122, 52);
+            this.materialCard3.TabIndex = 4;
+            // 
+            // materialButton5
+            // 
+            this.materialButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton5.Depth = 0;
+            this.materialButton5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton5.HighEmphasis = true;
+            this.materialButton5.Icon = null;
+            this.materialButton5.Location = new System.Drawing.Point(5, 5);
+            this.materialButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton5.Name = "materialButton5";
+            this.materialButton5.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton5.Size = new System.Drawing.Size(112, 42);
+            this.materialButton5.TabIndex = 2;
+            this.materialButton5.Text = "Sửa";
+            this.materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton5.UseAccentColor = false;
+            this.materialButton5.UseVisualStyleBackColor = true;
+            // 
+            // materialCard2
+            // 
+            this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard2.Controls.Add(this.materialButton2);
+            this.materialCard2.Depth = 0;
+            this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard2.Location = new System.Drawing.Point(6, 402);
+            this.materialCard2.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard2.Name = "materialCard2";
+            this.materialCard2.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard2.Size = new System.Drawing.Size(122, 52);
+            this.materialCard2.TabIndex = 3;
+            // 
+            // materialButton2
+            // 
+            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton2.Depth = 0;
+            this.materialButton2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton2.HighEmphasis = true;
+            this.materialButton2.Icon = null;
+            this.materialButton2.Location = new System.Drawing.Point(5, 5);
+            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton2.Name = "materialButton2";
+            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton2.Size = new System.Drawing.Size(112, 42);
+            this.materialButton2.TabIndex = 2;
+            this.materialButton2.Text = "Thêm";
+            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton2.UseAccentColor = false;
+            this.materialButton2.UseVisualStyleBackColor = true;
+            this.materialButton2.Click += new System.EventHandler(this.materialButton2_Click);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(6, 6);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(393, 389);
+            this.dataGridView2.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -223,8 +367,8 @@ namespace QL_quancafe
             this.tabPage2.ImageKey = "coffee.png";
             this.tabPage2.Location = new System.Drawing.Point(4, 39);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage2.Size = new System.Drawing.Size(786, 458);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(936, 459);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Món";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -236,7 +380,7 @@ namespace QL_quancafe
             this.panel4.Controls.Add(this.panel7);
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Location = new System.Drawing.Point(393, 91);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(384, 364);
             this.panel4.TabIndex = 7;
@@ -246,7 +390,7 @@ namespace QL_quancafe
             this.panel9.Controls.Add(this.nup_gia_food);
             this.panel9.Controls.Add(this.label4);
             this.panel9.Location = new System.Drawing.Point(2, 119);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(378, 34);
             this.panel9.TabIndex = 9;
@@ -254,7 +398,7 @@ namespace QL_quancafe
             // nup_gia_food
             // 
             this.nup_gia_food.Location = new System.Drawing.Point(110, 9);
-            this.nup_gia_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nup_gia_food.Margin = new System.Windows.Forms.Padding(2);
             this.nup_gia_food.Name = "nup_gia_food";
             this.nup_gia_food.Size = new System.Drawing.Size(229, 20);
             this.nup_gia_food.TabIndex = 1;
@@ -275,7 +419,7 @@ namespace QL_quancafe
             this.panel8.Controls.Add(this.cb_danhmuc_food);
             this.panel8.Controls.Add(this.label3);
             this.panel8.Location = new System.Drawing.Point(2, 80);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(378, 34);
             this.panel8.TabIndex = 8;
@@ -284,7 +428,7 @@ namespace QL_quancafe
             // 
             this.cb_danhmuc_food.FormattingEnabled = true;
             this.cb_danhmuc_food.Location = new System.Drawing.Point(110, 7);
-            this.cb_danhmuc_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_danhmuc_food.Margin = new System.Windows.Forms.Padding(2);
             this.cb_danhmuc_food.Name = "cb_danhmuc_food";
             this.cb_danhmuc_food.Size = new System.Drawing.Size(230, 21);
             this.cb_danhmuc_food.TabIndex = 1;
@@ -305,7 +449,7 @@ namespace QL_quancafe
             this.panel7.Controls.Add(this.txt_tenmon_food);
             this.panel7.Controls.Add(this.label2);
             this.panel7.Location = new System.Drawing.Point(2, 41);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(378, 34);
             this.panel7.TabIndex = 7;
@@ -313,7 +457,7 @@ namespace QL_quancafe
             // txt_tenmon_food
             // 
             this.txt_tenmon_food.Location = new System.Drawing.Point(110, 8);
-            this.txt_tenmon_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_tenmon_food.Margin = new System.Windows.Forms.Padding(2);
             this.txt_tenmon_food.Name = "txt_tenmon_food";
             this.txt_tenmon_food.ReadOnly = true;
             this.txt_tenmon_food.Size = new System.Drawing.Size(230, 20);
@@ -335,7 +479,7 @@ namespace QL_quancafe
             this.panel6.Controls.Add(this.txt_id_food);
             this.panel6.Controls.Add(this.label1);
             this.panel6.Location = new System.Drawing.Point(2, 2);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(378, 34);
             this.panel6.TabIndex = 6;
@@ -343,7 +487,7 @@ namespace QL_quancafe
             // txt_id_food
             // 
             this.txt_id_food.Location = new System.Drawing.Point(110, 8);
-            this.txt_id_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_id_food.Margin = new System.Windows.Forms.Padding(2);
             this.txt_id_food.Name = "txt_id_food";
             this.txt_id_food.ReadOnly = true;
             this.txt_id_food.Size = new System.Drawing.Size(230, 20);
@@ -365,7 +509,7 @@ namespace QL_quancafe
             this.panel3.Controls.Add(this.txt_tim_food);
             this.panel3.Controls.Add(this.btn_tim_food);
             this.panel3.Location = new System.Drawing.Point(395, 5);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(378, 81);
             this.panel3.TabIndex = 6;
@@ -373,7 +517,7 @@ namespace QL_quancafe
             // txt_tim_food
             // 
             this.txt_tim_food.Location = new System.Drawing.Point(9, 11);
-            this.txt_tim_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_tim_food.Margin = new System.Windows.Forms.Padding(2);
             this.txt_tim_food.Multiline = true;
             this.txt_tim_food.Name = "txt_tim_food";
             this.txt_tim_food.Size = new System.Drawing.Size(288, 59);
@@ -383,7 +527,7 @@ namespace QL_quancafe
             // 
             this.btn_tim_food.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_tim_food.Location = new System.Drawing.Point(301, 11);
-            this.btn_tim_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_tim_food.Margin = new System.Windows.Forms.Padding(2);
             this.btn_tim_food.Name = "btn_tim_food";
             this.btn_tim_food.Size = new System.Drawing.Size(75, 58);
             this.btn_tim_food.TabIndex = 4;
@@ -397,7 +541,7 @@ namespace QL_quancafe
             this.panel2.Controls.Add(this.btn_xoa_food);
             this.panel2.Controls.Add(this.btn_them_food);
             this.panel2.Location = new System.Drawing.Point(5, 5);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(383, 81);
             this.panel2.TabIndex = 4;
@@ -406,7 +550,7 @@ namespace QL_quancafe
             // 
             this.btn_xem_food.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_xem_food.Location = new System.Drawing.Point(306, 2);
-            this.btn_xem_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_xem_food.Margin = new System.Windows.Forms.Padding(2);
             this.btn_xem_food.Name = "btn_xem_food";
             this.btn_xem_food.Size = new System.Drawing.Size(75, 76);
             this.btn_xem_food.TabIndex = 3;
@@ -417,7 +561,7 @@ namespace QL_quancafe
             // 
             this.btn_sua_food.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_sua_food.Location = new System.Drawing.Point(201, 0);
-            this.btn_sua_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_sua_food.Margin = new System.Windows.Forms.Padding(2);
             this.btn_sua_food.Name = "btn_sua_food";
             this.btn_sua_food.Size = new System.Drawing.Size(75, 76);
             this.btn_sua_food.TabIndex = 2;
@@ -428,7 +572,7 @@ namespace QL_quancafe
             // 
             this.btn_xoa_food.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_xoa_food.Location = new System.Drawing.Point(99, 2);
-            this.btn_xoa_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_xoa_food.Margin = new System.Windows.Forms.Padding(2);
             this.btn_xoa_food.Name = "btn_xoa_food";
             this.btn_xoa_food.Size = new System.Drawing.Size(75, 76);
             this.btn_xoa_food.TabIndex = 1;
@@ -439,7 +583,7 @@ namespace QL_quancafe
             // 
             this.btn_them_food.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_them_food.Location = new System.Drawing.Point(2, 2);
-            this.btn_them_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_them_food.Margin = new System.Windows.Forms.Padding(2);
             this.btn_them_food.Name = "btn_them_food";
             this.btn_them_food.Size = new System.Drawing.Size(75, 76);
             this.btn_them_food.TabIndex = 0;
@@ -450,7 +594,7 @@ namespace QL_quancafe
             // 
             this.dgv_food.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_food.Location = new System.Drawing.Point(4, 91);
-            this.dgv_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_food.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_food.Name = "dgv_food";
             this.dgv_food.RowHeadersWidth = 51;
             this.dgv_food.RowTemplate.Height = 24;
@@ -464,10 +608,10 @@ namespace QL_quancafe
             this.tabPage3.Controls.Add(this.panel18);
             this.tabPage3.ImageKey = "Icon-clock.png";
             this.tabPage3.Location = new System.Drawing.Point(4, 39);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage3.Size = new System.Drawing.Size(786, 458);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage3.Size = new System.Drawing.Size(936, 459);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Ca Làm Việc";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -479,7 +623,7 @@ namespace QL_quancafe
             this.panel16.Controls.Add(this.button6);
             this.panel16.Controls.Add(this.button7);
             this.panel16.Location = new System.Drawing.Point(4, 4);
-            this.panel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel16.Margin = new System.Windows.Forms.Padding(2);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(392, 81);
             this.panel16.TabIndex = 14;
@@ -488,7 +632,7 @@ namespace QL_quancafe
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(315, 3);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 76);
             this.button4.TabIndex = 3;
@@ -499,7 +643,7 @@ namespace QL_quancafe
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(212, 2);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 76);
             this.button5.TabIndex = 2;
@@ -510,7 +654,7 @@ namespace QL_quancafe
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(109, 2);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 76);
             this.button6.TabIndex = 1;
@@ -521,7 +665,7 @@ namespace QL_quancafe
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(2, 2);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 76);
             this.button7.TabIndex = 0;
@@ -532,7 +676,7 @@ namespace QL_quancafe
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(7, 89);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -545,7 +689,7 @@ namespace QL_quancafe
             this.panel18.Controls.Add(this.panel20);
             this.panel18.Controls.Add(this.panel22);
             this.panel18.Location = new System.Drawing.Point(401, 89);
-            this.panel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel18.Margin = new System.Windows.Forms.Padding(2);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(376, 367);
             this.panel18.TabIndex = 15;
@@ -558,7 +702,7 @@ namespace QL_quancafe
             this.panel19.Controls.Add(this.textBox3);
             this.panel19.Controls.Add(this.label6);
             this.panel19.Location = new System.Drawing.Point(2, 80);
-            this.panel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel19.Margin = new System.Windows.Forms.Padding(2);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(372, 71);
             this.panel19.TabIndex = 8;
@@ -588,7 +732,7 @@ namespace QL_quancafe
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(214, 41);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(157, 20);
@@ -597,7 +741,7 @@ namespace QL_quancafe
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(214, 10);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(157, 20);
@@ -619,7 +763,7 @@ namespace QL_quancafe
             this.panel20.Controls.Add(this.dateTimePicker2);
             this.panel20.Controls.Add(this.label10);
             this.panel20.Location = new System.Drawing.Point(2, 41);
-            this.panel20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel20.Margin = new System.Windows.Forms.Padding(2);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(372, 34);
             this.panel20.TabIndex = 7;
@@ -627,7 +771,7 @@ namespace QL_quancafe
             // dateTimePicker2
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(158, 10);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(212, 20);
             this.dateTimePicker2.TabIndex = 1;
@@ -648,7 +792,7 @@ namespace QL_quancafe
             this.panel22.Controls.Add(this.textBox5);
             this.panel22.Controls.Add(this.label14);
             this.panel22.Location = new System.Drawing.Point(2, 2);
-            this.panel22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel22.Margin = new System.Windows.Forms.Padding(2);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(372, 34);
             this.panel22.TabIndex = 6;
@@ -656,7 +800,7 @@ namespace QL_quancafe
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(158, 11);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(213, 20);
@@ -683,10 +827,10 @@ namespace QL_quancafe
             this.tabPage4.Controls.Add(this.label9);
             this.tabPage4.ImageKey = "Icon-Kho.png";
             this.tabPage4.Location = new System.Drawing.Point(4, 39);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage4.Size = new System.Drawing.Size(786, 458);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage4.Size = new System.Drawing.Size(936, 459);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Kho";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -706,9 +850,9 @@ namespace QL_quancafe
             this.groupBox1.Controls.Add(this.rad_ttmah);
             this.groupBox1.Controls.Add(this.checkb_tktbd);
             this.groupBox1.Location = new System.Drawing.Point(656, 52);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(122, 117);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
@@ -786,10 +930,10 @@ namespace QL_quancafe
             this.tabPage5.Controls.Add(this.panel1);
             this.tabPage5.ImageKey = "dorla-icon.png";
             this.tabPage5.Location = new System.Drawing.Point(4, 39);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage5.Size = new System.Drawing.Size(786, 458);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Size = new System.Drawing.Size(936, 459);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Doanh Thu";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -798,7 +942,7 @@ namespace QL_quancafe
             // 
             this.flowLayoutPanel1.Controls.Add(this.dgv_blii);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(7, 32);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(769, 424);
             this.flowLayoutPanel1.TabIndex = 2;
@@ -807,7 +951,7 @@ namespace QL_quancafe
             // 
             this.dgv_blii.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_blii.Location = new System.Drawing.Point(2, 2);
-            this.dgv_blii.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_blii.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_blii.Name = "dgv_blii";
             this.dgv_blii.RowHeadersWidth = 51;
             this.dgv_blii.RowTemplate.Height = 24;
@@ -820,7 +964,7 @@ namespace QL_quancafe
             this.panel1.Controls.Add(this.dtp_bill_toi);
             this.panel1.Controls.Add(this.dtp_bill_tu);
             this.panel1.Location = new System.Drawing.Point(4, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(773, 24);
             this.panel1.TabIndex = 1;
@@ -828,7 +972,7 @@ namespace QL_quancafe
             // btn_xembill
             // 
             this.btn_xembill.Location = new System.Drawing.Point(304, 3);
-            this.btn_xembill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_xembill.Margin = new System.Windows.Forms.Padding(2);
             this.btn_xembill.Name = "btn_xembill";
             this.btn_xembill.Size = new System.Drawing.Size(146, 19);
             this.btn_xembill.TabIndex = 1;
@@ -838,7 +982,7 @@ namespace QL_quancafe
             // dtp_bill_toi
             // 
             this.dtp_bill_toi.Location = new System.Drawing.Point(596, 2);
-            this.dtp_bill_toi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtp_bill_toi.Margin = new System.Windows.Forms.Padding(2);
             this.dtp_bill_toi.Name = "dtp_bill_toi";
             this.dtp_bill_toi.Size = new System.Drawing.Size(176, 20);
             this.dtp_bill_toi.TabIndex = 1;
@@ -846,7 +990,7 @@ namespace QL_quancafe
             // dtp_bill_tu
             // 
             this.dtp_bill_tu.Location = new System.Drawing.Point(2, 3);
-            this.dtp_bill_tu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtp_bill_tu.Margin = new System.Windows.Forms.Padding(2);
             this.dtp_bill_tu.Name = "dtp_bill_tu";
             this.dtp_bill_tu.Size = new System.Drawing.Size(173, 20);
             this.dtp_bill_tu.TabIndex = 0;
@@ -856,10 +1000,10 @@ namespace QL_quancafe
             this.tabPage6.Controls.Add(this.materialCard1);
             this.tabPage6.ImageKey = "user-icon.png";
             this.tabPage6.Location = new System.Drawing.Point(4, 39);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage6.Size = new System.Drawing.Size(786, 459);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage6.Size = new System.Drawing.Size(936, 459);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Nhân Viên";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1082,164 +1226,33 @@ namespace QL_quancafe
             this.label13.TabIndex = 0;
             this.label13.Text = "USER :";
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(6, 6);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(393, 389);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // materialButton2
-            // 
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialButton2.HighEmphasis = true;
-            this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(5, 5);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton2.Size = new System.Drawing.Size(112, 42);
-            this.materialButton2.TabIndex = 2;
-            this.materialButton2.Text = "Thêm";
-            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton2.UseAccentColor = false;
-            this.materialButton2.UseVisualStyleBackColor = true;
-            this.materialButton2.Click += new System.EventHandler(this.materialButton2_Click);
-            // 
-            // materialCard2
-            // 
-            this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard2.Controls.Add(this.materialButton2);
-            this.materialCard2.Depth = 0;
-            this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(6, 402);
-            this.materialCard2.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard2.Name = "materialCard2";
-            this.materialCard2.Padding = new System.Windows.Forms.Padding(5);
-            this.materialCard2.Size = new System.Drawing.Size(122, 52);
-            this.materialCard2.TabIndex = 3;
-            // 
-            // materialCard3
-            // 
-            this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard3.Controls.Add(this.materialButton5);
-            this.materialCard3.Depth = 0;
-            this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard3.Location = new System.Drawing.Point(139, 402);
-            this.materialCard3.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard3.Name = "materialCard3";
-            this.materialCard3.Padding = new System.Windows.Forms.Padding(5);
-            this.materialCard3.Size = new System.Drawing.Size(122, 52);
-            this.materialCard3.TabIndex = 4;
-            // 
-            // materialButton5
-            // 
-            this.materialButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton5.Depth = 0;
-            this.materialButton5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialButton5.HighEmphasis = true;
-            this.materialButton5.Icon = null;
-            this.materialButton5.Location = new System.Drawing.Point(5, 5);
-            this.materialButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton5.Name = "materialButton5";
-            this.materialButton5.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton5.Size = new System.Drawing.Size(112, 42);
-            this.materialButton5.TabIndex = 2;
-            this.materialButton5.Text = "Sửa";
-            this.materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton5.UseAccentColor = false;
-            this.materialButton5.UseVisualStyleBackColor = true;
-            // 
-            // materialCard4
-            // 
-            this.materialCard4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard4.Controls.Add(this.materialButton6);
-            this.materialCard4.Depth = 0;
-            this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard4.Location = new System.Drawing.Point(277, 402);
-            this.materialCard4.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard4.Name = "materialCard4";
-            this.materialCard4.Padding = new System.Windows.Forms.Padding(5);
-            this.materialCard4.Size = new System.Drawing.Size(122, 52);
-            this.materialCard4.TabIndex = 4;
-            // 
-            // materialButton6
-            // 
-            this.materialButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton6.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton6.Depth = 0;
-            this.materialButton6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialButton6.HighEmphasis = true;
-            this.materialButton6.Icon = null;
-            this.materialButton6.Location = new System.Drawing.Point(5, 5);
-            this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton6.Name = "materialButton6";
-            this.materialButton6.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton6.Size = new System.Drawing.Size(112, 42);
-            this.materialButton6.TabIndex = 2;
-            this.materialButton6.Text = "Xóa";
-            this.materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton6.UseAccentColor = false;
-            this.materialButton6.UseVisualStyleBackColor = true;
-            // 
-            // materialCard5
-            // 
-            this.materialCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard5.Controls.Add(this.materialButton1);
-            this.materialCard5.Depth = 0;
-            this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard5.Location = new System.Drawing.Point(407, 6);
-            this.materialCard5.Margin = new System.Windows.Forms.Padding(14);
-            this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard5.Name = "materialCard5";
-            this.materialCard5.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard5.Size = new System.Drawing.Size(369, 389);
-            this.materialCard5.TabIndex = 5;
-            // 
-            // materialButton1
-            // 
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(193, 54);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(158, 36);
-            this.materialButton1.TabIndex = 0;
-            this.materialButton1.Text = "materialButton1";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 569);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(950, 569);
             this.Controls.Add(this.materialTabControl1);
+            this.DrawerAutoShow = true;
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.materialTabControl1;
             this.Name = "Form1";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.materialCard5.ResumeLayout(false);
+            this.materialCard5.PerformLayout();
+            this.materialCard4.ResumeLayout(false);
+            this.materialCard4.PerformLayout();
+            this.materialCard3.ResumeLayout(false);
+            this.materialCard3.PerformLayout();
+            this.materialCard2.ResumeLayout(false);
+            this.materialCard2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
@@ -1286,15 +1299,6 @@ namespace QL_quancafe
             this.panel24.PerformLayout();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.materialCard2.ResumeLayout(false);
-            this.materialCard2.PerformLayout();
-            this.materialCard3.ResumeLayout(false);
-            this.materialCard3.PerformLayout();
-            this.materialCard4.ResumeLayout(false);
-            this.materialCard4.PerformLayout();
-            this.materialCard5.ResumeLayout(false);
-            this.materialCard5.PerformLayout();
             this.ResumeLayout(false);
 
         }

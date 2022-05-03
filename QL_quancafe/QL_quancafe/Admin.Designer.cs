@@ -28,1222 +28,1237 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tc_Ad = new System.Windows.Forms.TabControl();
-            this.tp_Bill = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.dgv_blii = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_xembill = new System.Windows.Forms.Button();
-            this.dtp_bill_toi = new System.Windows.Forms.DateTimePicker();
-            this.dtp_bill_tu = new System.Windows.Forms.DateTimePicker();
-            this.tp_food = new System.Windows.Forms.TabPage();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.nup_gia_food = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.cb_danhmuc_food = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.txt_tenmon_food = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.txt_id_food = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.dgv_food = new System.Windows.Forms.DataGridView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txt_tim_food = new System.Windows.Forms.TextBox();
-            this.btn_tim_food = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_xem_food = new System.Windows.Forms.Button();
-            this.btn_sua_food = new System.Windows.Forms.Button();
-            this.btn_xoa_food = new System.Windows.Forms.Button();
-            this.btn_them_food = new System.Windows.Forms.Button();
-            this.tp_danhmuc = new System.Windows.Forms.TabPage();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.txt_tendanhmuc = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.txt_id__danhmuc = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.dgv_danhmuc = new System.Windows.Forms.DataGridView();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.btn_xem__danhmuc = new System.Windows.Forms.Button();
-            this.btn_sua__danhmuc = new System.Windows.Forms.Button();
-            this.btn_xoa__danhmuc = new System.Windows.Forms.Button();
-            this.btn_them_danhmuc = new System.Windows.Forms.Button();
-            this.tp_banan = new System.Windows.Forms.TabPage();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.cb_trangthai_ban = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.txt_tenban = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.txt_id_ban = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.dgv_banan = new System.Windows.Forms.DataGridView();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.btn_xem_ban = new System.Windows.Forms.Button();
-            this.btn_sua_ban = new System.Windows.Forms.Button();
-            this.btn_xoa_ban = new System.Windows.Forms.Button();
-            this.btn_them_ban = new System.Windows.Forms.Button();
-            this.tp_Acc = new System.Windows.Forms.TabPage();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.btn_setpassword = new System.Windows.Forms.Button();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.cb_loaitaikhoan_account = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.txt_tenhienthi_account = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.txt_user_account = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.dgv_taikhoan = new System.Windows.Forms.DataGridView();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.btn_xem_account = new System.Windows.Forms.Button();
-            this.btn_sua_account = new System.Windows.Forms.Button();
-            this.btn_xoa_account = new System.Windows.Forms.Button();
-            this.btn_them_account = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tc_Ad.SuspendLayout();
-            this.tp_Bill.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_blii)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.tp_food.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nup_gia_food)).BeginInit();
-            this.panel8.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_food)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.tp_danhmuc.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_danhmuc)).BeginInit();
-            this.panel17.SuspendLayout();
-            this.tp_banan.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_banan)).BeginInit();
-            this.panel19.SuspendLayout();
-            this.tp_Acc.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel23.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel25.SuspendLayout();
-            this.panel26.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_taikhoan)).BeginInit();
-            this.panel28.SuspendLayout();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.materialCard8 = new MaterialSkin.Controls.MaterialCard();
+            this.materialCard9 = new MaterialSkin.Controls.MaterialCard();
+            this.materialTextBox25 = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialCard10 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
+            this.materialTextBox23 = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialTextBox24 = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialCard11 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton7 = new MaterialSkin.Controls.MaterialButton();
+            this.materialCard12 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton8 = new MaterialSkin.Controls.MaterialButton();
+            this.materialCard15 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton9 = new MaterialSkin.Controls.MaterialButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
+            this.materialCard6 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.materialTextBox22 = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialTextBox21 = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
+            this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
+            this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.materialCard7 = new MaterialSkin.Controls.MaterialCard();
+            this.materialCard16 = new MaterialSkin.Controls.MaterialCard();
+            this.materialCard17 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
+            this.materialTextBox26 = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialTextBox27 = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialCard18 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton10 = new MaterialSkin.Controls.MaterialButton();
+            this.materialCard19 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton11 = new MaterialSkin.Controls.MaterialButton();
+            this.materialCard20 = new MaterialSkin.Controls.MaterialCard();
+            this.materialButton12 = new MaterialSkin.Controls.MaterialButton();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.materialTextBox28 = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.materialCard8.SuspendLayout();
+            this.materialCard9.SuspendLayout();
+            this.materialCard10.SuspendLayout();
+            this.materialCard11.SuspendLayout();
+            this.materialCard12.SuspendLayout();
+            this.materialCard15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.materialCard1.SuspendLayout();
+            this.materialCard5.SuspendLayout();
+            this.materialCard6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.materialCard4.SuspendLayout();
+            this.materialCard3.SuspendLayout();
+            this.materialCard2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.materialCard7.SuspendLayout();
+            this.materialCard16.SuspendLayout();
+            this.materialCard17.SuspendLayout();
+            this.materialCard18.SuspendLayout();
+            this.materialCard19.SuspendLayout();
+            this.materialCard20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.SuspendLayout();
             // 
-            // tc_Ad
-            // 
-            this.tc_Ad.Controls.Add(this.tp_Bill);
-            this.tc_Ad.Controls.Add(this.tp_food);
-            this.tc_Ad.Controls.Add(this.tp_danhmuc);
-            this.tc_Ad.Controls.Add(this.tp_banan);
-            this.tc_Ad.Controls.Add(this.tp_Acc);
-            this.tc_Ad.Location = new System.Drawing.Point(11, 64);
-            this.tc_Ad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tc_Ad.Name = "tc_Ad";
-            this.tc_Ad.SelectedIndex = 0;
-            this.tc_Ad.Size = new System.Drawing.Size(667, 435);
-            this.tc_Ad.TabIndex = 0;
-            // 
-            // tp_Bill
-            // 
-            this.tp_Bill.Controls.Add(this.flowLayoutPanel1);
-            this.tp_Bill.Controls.Add(this.panel1);
-            this.tp_Bill.Location = new System.Drawing.Point(4, 22);
-            this.tp_Bill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tp_Bill.Name = "tp_Bill";
-            this.tp_Bill.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tp_Bill.Size = new System.Drawing.Size(659, 409);
-            this.tp_Bill.TabIndex = 0;
-            this.tp_Bill.Text = "Doanh thu";
-            this.tp_Bill.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.dgv_blii);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(4, 33);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(652, 373);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // dgv_blii
-            // 
-            this.dgv_blii.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_blii.Location = new System.Drawing.Point(2, 2);
-            this.dgv_blii.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dgv_blii.Name = "dgv_blii";
-            this.dgv_blii.RowHeadersWidth = 51;
-            this.dgv_blii.RowTemplate.Height = 24;
-            this.dgv_blii.Size = new System.Drawing.Size(650, 370);
-            this.dgv_blii.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btn_xembill);
-            this.panel1.Controls.Add(this.dtp_bill_toi);
-            this.panel1.Controls.Add(this.dtp_bill_tu);
-            this.panel1.Location = new System.Drawing.Point(4, 5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(652, 24);
-            this.panel1.TabIndex = 0;
-            // 
-            // btn_xembill
-            // 
-            this.btn_xembill.Location = new System.Drawing.Point(298, 2);
-            this.btn_xembill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_xembill.Name = "btn_xembill";
-            this.btn_xembill.Size = new System.Drawing.Size(56, 19);
-            this.btn_xembill.TabIndex = 1;
-            this.btn_xembill.Text = "Thống kê";
-            this.btn_xembill.UseVisualStyleBackColor = true;
-            // 
-            // dtp_bill_toi
-            // 
-            this.dtp_bill_toi.Location = new System.Drawing.Point(475, 2);
-            this.dtp_bill_toi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dtp_bill_toi.Name = "dtp_bill_toi";
-            this.dtp_bill_toi.Size = new System.Drawing.Size(176, 20);
-            this.dtp_bill_toi.TabIndex = 1;
-            // 
-            // dtp_bill_tu
-            // 
-            this.dtp_bill_tu.Location = new System.Drawing.Point(2, 2);
-            this.dtp_bill_tu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dtp_bill_tu.Name = "dtp_bill_tu";
-            this.dtp_bill_tu.Size = new System.Drawing.Size(173, 20);
-            this.dtp_bill_tu.TabIndex = 0;
-            // 
-            // tp_food
-            // 
-            this.tp_food.Controls.Add(this.panel4);
-            this.tp_food.Controls.Add(this.panel5);
-            this.tp_food.Controls.Add(this.panel3);
-            this.tp_food.Controls.Add(this.panel2);
-            this.tp_food.Location = new System.Drawing.Point(4, 22);
-            this.tp_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tp_food.Name = "tp_food";
-            this.tp_food.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tp_food.Size = new System.Drawing.Size(659, 409);
-            this.tp_food.TabIndex = 1;
-            this.tp_food.Text = "Thức ăn";
-            this.tp_food.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.panel9);
-            this.panel4.Controls.Add(this.panel8);
-            this.panel4.Controls.Add(this.panel7);
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Location = new System.Drawing.Point(350, 91);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(306, 315);
-            this.panel4.TabIndex = 3;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.nup_gia_food);
-            this.panel9.Controls.Add(this.label4);
-            this.panel9.Location = new System.Drawing.Point(2, 119);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(302, 34);
-            this.panel9.TabIndex = 9;
-            // 
-            // nup_gia_food
-            // 
-            this.nup_gia_food.Location = new System.Drawing.Point(110, 9);
-            this.nup_gia_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.nup_gia_food.Name = "nup_gia_food";
-            this.nup_gia_food.Size = new System.Drawing.Size(190, 20);
-            this.nup_gia_food.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 6);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 24);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Giá :";
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.cb_danhmuc_food);
-            this.panel8.Controls.Add(this.label3);
-            this.panel8.Location = new System.Drawing.Point(2, 80);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(302, 34);
-            this.panel8.TabIndex = 8;
-            // 
-            // cb_danhmuc_food
-            // 
-            this.cb_danhmuc_food.FormattingEnabled = true;
-            this.cb_danhmuc_food.Location = new System.Drawing.Point(110, 7);
-            this.cb_danhmuc_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cb_danhmuc_food.Name = "cb_danhmuc_food";
-            this.cb_danhmuc_food.Size = new System.Drawing.Size(191, 21);
-            this.cb_danhmuc_food.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 6);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 24);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Danh mục:";
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.txt_tenmon_food);
-            this.panel7.Controls.Add(this.label2);
-            this.panel7.Location = new System.Drawing.Point(2, 41);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(302, 34);
-            this.panel7.TabIndex = 7;
-            // 
-            // txt_tenmon_food
-            // 
-            this.txt_tenmon_food.Location = new System.Drawing.Point(110, 8);
-            this.txt_tenmon_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_tenmon_food.Name = "txt_tenmon_food";
-            this.txt_tenmon_food.ReadOnly = true;
-            this.txt_tenmon_food.Size = new System.Drawing.Size(191, 20);
-            this.txt_tenmon_food.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 6);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Tên món :";
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.txt_id_food);
-            this.panel6.Controls.Add(this.label1);
-            this.panel6.Location = new System.Drawing.Point(2, 2);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(302, 34);
-            this.panel6.TabIndex = 6;
-            // 
-            // txt_id_food
-            // 
-            this.txt_id_food.Location = new System.Drawing.Point(110, 8);
-            this.txt_id_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_id_food.Name = "txt_id_food";
-            this.txt_id_food.ReadOnly = true;
-            this.txt_id_food.Size = new System.Drawing.Size(191, 20);
-            this.txt_id_food.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 6);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID :";
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.dgv_food);
-            this.panel5.Location = new System.Drawing.Point(4, 91);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(341, 315);
-            this.panel5.TabIndex = 2;
-            // 
-            // dgv_food
-            // 
-            this.dgv_food.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_food.Location = new System.Drawing.Point(2, 2);
-            this.dgv_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dgv_food.Name = "dgv_food";
-            this.dgv_food.RowHeadersWidth = 51;
-            this.dgv_food.RowTemplate.Height = 24;
-            this.dgv_food.Size = new System.Drawing.Size(337, 310);
-            this.dgv_food.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.txt_tim_food);
-            this.panel3.Controls.Add(this.btn_tim_food);
-            this.panel3.Location = new System.Drawing.Point(350, 5);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(306, 81);
-            this.panel3.TabIndex = 1;
-            // 
-            // txt_tim_food
-            // 
-            this.txt_tim_food.Location = new System.Drawing.Point(9, 32);
-            this.txt_tim_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_tim_food.Name = "txt_tim_food";
-            this.txt_tim_food.Size = new System.Drawing.Size(216, 20);
-            this.txt_tim_food.TabIndex = 5;
-            // 
-            // btn_tim_food
-            // 
-            this.btn_tim_food.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_tim_food.Location = new System.Drawing.Point(229, 2);
-            this.btn_tim_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_tim_food.Name = "btn_tim_food";
-            this.btn_tim_food.Size = new System.Drawing.Size(75, 76);
-            this.btn_tim_food.TabIndex = 4;
-            this.btn_tim_food.Text = "Tìm";
-            this.btn_tim_food.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btn_xem_food);
-            this.panel2.Controls.Add(this.btn_sua_food);
-            this.panel2.Controls.Add(this.btn_xoa_food);
-            this.panel2.Controls.Add(this.btn_them_food);
-            this.panel2.Location = new System.Drawing.Point(4, 5);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(341, 81);
-            this.panel2.TabIndex = 0;
-            // 
-            // btn_xem_food
-            // 
-            this.btn_xem_food.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xem_food.Location = new System.Drawing.Point(264, 2);
-            this.btn_xem_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_xem_food.Name = "btn_xem_food";
-            this.btn_xem_food.Size = new System.Drawing.Size(75, 76);
-            this.btn_xem_food.TabIndex = 3;
-            this.btn_xem_food.Text = "Xem";
-            this.btn_xem_food.UseVisualStyleBackColor = true;
-            // 
-            // btn_sua_food
-            // 
-            this.btn_sua_food.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sua_food.Location = new System.Drawing.Point(176, 2);
-            this.btn_sua_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_sua_food.Name = "btn_sua_food";
-            this.btn_sua_food.Size = new System.Drawing.Size(75, 76);
-            this.btn_sua_food.TabIndex = 2;
-            this.btn_sua_food.Text = "Sửa";
-            this.btn_sua_food.UseVisualStyleBackColor = true;
-            // 
-            // btn_xoa_food
-            // 
-            this.btn_xoa_food.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoa_food.Location = new System.Drawing.Point(89, 2);
-            this.btn_xoa_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_xoa_food.Name = "btn_xoa_food";
-            this.btn_xoa_food.Size = new System.Drawing.Size(75, 76);
-            this.btn_xoa_food.TabIndex = 1;
-            this.btn_xoa_food.Text = "Xóa";
-            this.btn_xoa_food.UseVisualStyleBackColor = true;
-            // 
-            // btn_them_food
-            // 
-            this.btn_them_food.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_them_food.Location = new System.Drawing.Point(2, 2);
-            this.btn_them_food.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_them_food.Name = "btn_them_food";
-            this.btn_them_food.Size = new System.Drawing.Size(75, 76);
-            this.btn_them_food.TabIndex = 0;
-            this.btn_them_food.Text = "Thêm";
-            this.btn_them_food.UseVisualStyleBackColor = true;
-            // 
-            // tp_danhmuc
-            // 
-            this.tp_danhmuc.Controls.Add(this.panel10);
-            this.tp_danhmuc.Controls.Add(this.panel15);
-            this.tp_danhmuc.Controls.Add(this.panel17);
-            this.tp_danhmuc.Location = new System.Drawing.Point(4, 22);
-            this.tp_danhmuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tp_danhmuc.Name = "tp_danhmuc";
-            this.tp_danhmuc.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tp_danhmuc.Size = new System.Drawing.Size(659, 409);
-            this.tp_danhmuc.TabIndex = 2;
-            this.tp_danhmuc.Text = "Danh mục";
-            this.tp_danhmuc.UseVisualStyleBackColor = true;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.panel13);
-            this.panel10.Controls.Add(this.panel14);
-            this.panel10.Location = new System.Drawing.Point(350, 91);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(306, 315);
-            this.panel10.TabIndex = 7;
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.txt_tendanhmuc);
-            this.panel13.Controls.Add(this.label7);
-            this.panel13.Location = new System.Drawing.Point(2, 41);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(302, 34);
-            this.panel13.TabIndex = 7;
-            // 
-            // txt_tendanhmuc
-            // 
-            this.txt_tendanhmuc.Location = new System.Drawing.Point(152, 8);
-            this.txt_tendanhmuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_tendanhmuc.Name = "txt_tendanhmuc";
-            this.txt_tendanhmuc.ReadOnly = true;
-            this.txt_tendanhmuc.Size = new System.Drawing.Size(149, 20);
-            this.txt_tendanhmuc.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 6);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(158, 24);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Tên danh mục :";
-            // 
-            // panel14
-            // 
-            this.panel14.Controls.Add(this.txt_id__danhmuc);
-            this.panel14.Controls.Add(this.label8);
-            this.panel14.Location = new System.Drawing.Point(2, 2);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(302, 34);
-            this.panel14.TabIndex = 6;
-            // 
-            // txt_id__danhmuc
-            // 
-            this.txt_id__danhmuc.Location = new System.Drawing.Point(152, 8);
-            this.txt_id__danhmuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_id__danhmuc.Name = "txt_id__danhmuc";
-            this.txt_id__danhmuc.ReadOnly = true;
-            this.txt_id__danhmuc.Size = new System.Drawing.Size(149, 20);
-            this.txt_id__danhmuc.TabIndex = 2;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 6);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 24);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "ID :";
-            // 
-            // panel15
-            // 
-            this.panel15.Controls.Add(this.dgv_danhmuc);
-            this.panel15.Location = new System.Drawing.Point(4, 91);
-            this.panel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(341, 315);
-            this.panel15.TabIndex = 6;
-            // 
-            // dgv_danhmuc
-            // 
-            this.dgv_danhmuc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_danhmuc.Location = new System.Drawing.Point(2, 2);
-            this.dgv_danhmuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dgv_danhmuc.Name = "dgv_danhmuc";
-            this.dgv_danhmuc.RowHeadersWidth = 51;
-            this.dgv_danhmuc.RowTemplate.Height = 24;
-            this.dgv_danhmuc.Size = new System.Drawing.Size(337, 310);
-            this.dgv_danhmuc.TabIndex = 0;
-            // 
-            // panel17
-            // 
-            this.panel17.Controls.Add(this.btn_xem__danhmuc);
-            this.panel17.Controls.Add(this.btn_sua__danhmuc);
-            this.panel17.Controls.Add(this.btn_xoa__danhmuc);
-            this.panel17.Controls.Add(this.btn_them_danhmuc);
-            this.panel17.Location = new System.Drawing.Point(4, 5);
-            this.panel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(341, 81);
-            this.panel17.TabIndex = 4;
-            // 
-            // btn_xem__danhmuc
-            // 
-            this.btn_xem__danhmuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xem__danhmuc.Location = new System.Drawing.Point(264, 2);
-            this.btn_xem__danhmuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_xem__danhmuc.Name = "btn_xem__danhmuc";
-            this.btn_xem__danhmuc.Size = new System.Drawing.Size(75, 76);
-            this.btn_xem__danhmuc.TabIndex = 3;
-            this.btn_xem__danhmuc.Text = "Xem";
-            this.btn_xem__danhmuc.UseVisualStyleBackColor = true;
-            // 
-            // btn_sua__danhmuc
-            // 
-            this.btn_sua__danhmuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sua__danhmuc.Location = new System.Drawing.Point(176, 2);
-            this.btn_sua__danhmuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_sua__danhmuc.Name = "btn_sua__danhmuc";
-            this.btn_sua__danhmuc.Size = new System.Drawing.Size(75, 76);
-            this.btn_sua__danhmuc.TabIndex = 2;
-            this.btn_sua__danhmuc.Text = "Sửa";
-            this.btn_sua__danhmuc.UseVisualStyleBackColor = true;
-            // 
-            // btn_xoa__danhmuc
-            // 
-            this.btn_xoa__danhmuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoa__danhmuc.Location = new System.Drawing.Point(89, 2);
-            this.btn_xoa__danhmuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_xoa__danhmuc.Name = "btn_xoa__danhmuc";
-            this.btn_xoa__danhmuc.Size = new System.Drawing.Size(75, 76);
-            this.btn_xoa__danhmuc.TabIndex = 1;
-            this.btn_xoa__danhmuc.Text = "Xóa";
-            this.btn_xoa__danhmuc.UseVisualStyleBackColor = true;
-            // 
-            // btn_them_danhmuc
-            // 
-            this.btn_them_danhmuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_them_danhmuc.Location = new System.Drawing.Point(2, 2);
-            this.btn_them_danhmuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_them_danhmuc.Name = "btn_them_danhmuc";
-            this.btn_them_danhmuc.Size = new System.Drawing.Size(75, 76);
-            this.btn_them_danhmuc.TabIndex = 0;
-            this.btn_them_danhmuc.Text = "Thêm";
-            this.btn_them_danhmuc.UseVisualStyleBackColor = true;
-            // 
-            // tp_banan
-            // 
-            this.tp_banan.Controls.Add(this.materialTabControl1);
-            this.tp_banan.Controls.Add(this.panel11);
-            this.tp_banan.Controls.Add(this.panel18);
-            this.tp_banan.Controls.Add(this.panel19);
-            this.tp_banan.Location = new System.Drawing.Point(4, 22);
-            this.tp_banan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tp_banan.Name = "tp_banan";
-            this.tp_banan.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tp_banan.Size = new System.Drawing.Size(659, 409);
-            this.tp_banan.TabIndex = 3;
-            this.tp_banan.Text = "Bàn ăn";
-            this.tp_banan.UseVisualStyleBackColor = true;
-            this.tp_banan.Click += new System.EventHandler(this.tp_banan_Click);
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.panel20);
-            this.panel11.Controls.Add(this.panel12);
-            this.panel11.Controls.Add(this.panel16);
-            this.panel11.Location = new System.Drawing.Point(351, 112);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(306, 315);
-            this.panel11.TabIndex = 10;
-            // 
-            // panel20
-            // 
-            this.panel20.Controls.Add(this.cb_trangthai_ban);
-            this.panel20.Controls.Add(this.label9);
-            this.panel20.Location = new System.Drawing.Point(2, 80);
-            this.panel20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(302, 34);
-            this.panel20.TabIndex = 8;
-            // 
-            // cb_trangthai_ban
-            // 
-            this.cb_trangthai_ban.FormattingEnabled = true;
-            this.cb_trangthai_ban.Location = new System.Drawing.Point(114, 8);
-            this.cb_trangthai_ban.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cb_trangthai_ban.Name = "cb_trangthai_ban";
-            this.cb_trangthai_ban.Size = new System.Drawing.Size(186, 21);
-            this.cb_trangthai_ban.TabIndex = 1;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 6);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(116, 24);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Trạng thái :";
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.txt_tenban);
-            this.panel12.Controls.Add(this.label5);
-            this.panel12.Location = new System.Drawing.Point(2, 41);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(302, 34);
-            this.panel12.TabIndex = 7;
-            // 
-            // txt_tenban
-            // 
-            this.txt_tenban.Location = new System.Drawing.Point(114, 8);
-            this.txt_tenban.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_tenban.Name = "txt_tenban";
-            this.txt_tenban.ReadOnly = true;
-            this.txt_tenban.Size = new System.Drawing.Size(186, 20);
-            this.txt_tenban.TabIndex = 2;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 6);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 24);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Tên bàn :";
-            // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.txt_id_ban);
-            this.panel16.Controls.Add(this.label6);
-            this.panel16.Location = new System.Drawing.Point(2, 2);
-            this.panel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(302, 34);
-            this.panel16.TabIndex = 6;
-            // 
-            // txt_id_ban
-            // 
-            this.txt_id_ban.Location = new System.Drawing.Point(114, 8);
-            this.txt_id_ban.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_id_ban.Name = "txt_id_ban";
-            this.txt_id_ban.ReadOnly = true;
-            this.txt_id_ban.Size = new System.Drawing.Size(186, 20);
-            this.txt_id_ban.TabIndex = 2;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 6);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 24);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "ID :";
-            // 
-            // panel18
-            // 
-            this.panel18.Controls.Add(this.dgv_banan);
-            this.panel18.Location = new System.Drawing.Point(4, 91);
-            this.panel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(341, 315);
-            this.panel18.TabIndex = 9;
-            // 
-            // dgv_banan
-            // 
-            this.dgv_banan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_banan.Location = new System.Drawing.Point(2, 2);
-            this.dgv_banan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dgv_banan.Name = "dgv_banan";
-            this.dgv_banan.RowHeadersWidth = 51;
-            this.dgv_banan.RowTemplate.Height = 24;
-            this.dgv_banan.Size = new System.Drawing.Size(337, 310);
-            this.dgv_banan.TabIndex = 0;
-            // 
-            // panel19
-            // 
-            this.panel19.Controls.Add(this.btn_xem_ban);
-            this.panel19.Controls.Add(this.btn_sua_ban);
-            this.panel19.Controls.Add(this.btn_xoa_ban);
-            this.panel19.Controls.Add(this.btn_them_ban);
-            this.panel19.Location = new System.Drawing.Point(4, 5);
-            this.panel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(341, 81);
-            this.panel19.TabIndex = 8;
-            // 
-            // btn_xem_ban
-            // 
-            this.btn_xem_ban.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xem_ban.Location = new System.Drawing.Point(264, 2);
-            this.btn_xem_ban.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_xem_ban.Name = "btn_xem_ban";
-            this.btn_xem_ban.Size = new System.Drawing.Size(75, 76);
-            this.btn_xem_ban.TabIndex = 3;
-            this.btn_xem_ban.Text = "Xem";
-            this.btn_xem_ban.UseVisualStyleBackColor = true;
-            // 
-            // btn_sua_ban
-            // 
-            this.btn_sua_ban.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sua_ban.Location = new System.Drawing.Point(176, 2);
-            this.btn_sua_ban.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_sua_ban.Name = "btn_sua_ban";
-            this.btn_sua_ban.Size = new System.Drawing.Size(75, 76);
-            this.btn_sua_ban.TabIndex = 2;
-            this.btn_sua_ban.Text = "Sửa";
-            this.btn_sua_ban.UseVisualStyleBackColor = true;
-            // 
-            // btn_xoa_ban
-            // 
-            this.btn_xoa_ban.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoa_ban.Location = new System.Drawing.Point(89, 2);
-            this.btn_xoa_ban.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_xoa_ban.Name = "btn_xoa_ban";
-            this.btn_xoa_ban.Size = new System.Drawing.Size(75, 76);
-            this.btn_xoa_ban.TabIndex = 1;
-            this.btn_xoa_ban.Text = "Xóa";
-            this.btn_xoa_ban.UseVisualStyleBackColor = true;
-            // 
-            // btn_them_ban
-            // 
-            this.btn_them_ban.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_them_ban.Location = new System.Drawing.Point(2, 2);
-            this.btn_them_ban.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_them_ban.Name = "btn_them_ban";
-            this.btn_them_ban.Size = new System.Drawing.Size(75, 76);
-            this.btn_them_ban.TabIndex = 0;
-            this.btn_them_ban.Text = "Thêm";
-            this.btn_them_ban.UseVisualStyleBackColor = true;
-            // 
-            // tp_Acc
-            // 
-            this.tp_Acc.Controls.Add(this.panel21);
-            this.tp_Acc.Controls.Add(this.panel26);
-            this.tp_Acc.Controls.Add(this.panel28);
-            this.tp_Acc.Location = new System.Drawing.Point(4, 22);
-            this.tp_Acc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tp_Acc.Name = "tp_Acc";
-            this.tp_Acc.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tp_Acc.Size = new System.Drawing.Size(659, 409);
-            this.tp_Acc.TabIndex = 4;
-            this.tp_Acc.Text = "Tài khoản";
-            this.tp_Acc.UseVisualStyleBackColor = true;
-            this.tp_Acc.Click += new System.EventHandler(this.tp_Acc_Click);
-            // 
-            // panel21
-            // 
-            this.panel21.Controls.Add(this.btn_setpassword);
-            this.panel21.Controls.Add(this.panel23);
-            this.panel21.Controls.Add(this.panel24);
-            this.panel21.Controls.Add(this.panel25);
-            this.panel21.Location = new System.Drawing.Point(350, 91);
-            this.panel21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(306, 315);
-            this.panel21.TabIndex = 7;
-            // 
-            // btn_setpassword
-            // 
-            this.btn_setpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_setpassword.Location = new System.Drawing.Point(226, 119);
-            this.btn_setpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_setpassword.Name = "btn_setpassword";
-            this.btn_setpassword.Size = new System.Drawing.Size(75, 48);
-            this.btn_setpassword.TabIndex = 4;
-            this.btn_setpassword.Text = "Đặt lại mật khẩu";
-            this.btn_setpassword.UseVisualStyleBackColor = true;
-            this.btn_setpassword.Click += new System.EventHandler(this.btn_setpassword_Click);
-            // 
-            // panel23
-            // 
-            this.panel23.Controls.Add(this.cb_loaitaikhoan_account);
-            this.panel23.Controls.Add(this.label11);
-            this.panel23.Location = new System.Drawing.Point(2, 80);
-            this.panel23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(302, 34);
-            this.panel23.TabIndex = 8;
-            // 
-            // cb_loaitaikhoan_account
-            // 
-            this.cb_loaitaikhoan_account.FormattingEnabled = true;
-            this.cb_loaitaikhoan_account.Location = new System.Drawing.Point(149, 7);
-            this.cb_loaitaikhoan_account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cb_loaitaikhoan_account.Name = "cb_loaitaikhoan_account";
-            this.cb_loaitaikhoan_account.Size = new System.Drawing.Size(151, 21);
-            this.cb_loaitaikhoan_account.TabIndex = 1;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(3, 6);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(151, 24);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Loại tài khoản :";
-            // 
-            // panel24
-            // 
-            this.panel24.Controls.Add(this.txt_tenhienthi_account);
-            this.panel24.Controls.Add(this.label12);
-            this.panel24.Location = new System.Drawing.Point(2, 41);
-            this.panel24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(302, 34);
-            this.panel24.TabIndex = 7;
-            // 
-            // txt_tenhienthi_account
-            // 
-            this.txt_tenhienthi_account.Location = new System.Drawing.Point(149, 8);
-            this.txt_tenhienthi_account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_tenhienthi_account.Name = "txt_tenhienthi_account";
-            this.txt_tenhienthi_account.ReadOnly = true;
-            this.txt_tenhienthi_account.Size = new System.Drawing.Size(151, 20);
-            this.txt_tenhienthi_account.TabIndex = 2;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(3, 6);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(134, 24);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Tên hiển thị :";
-            // 
-            // panel25
-            // 
-            this.panel25.Controls.Add(this.txt_user_account);
-            this.panel25.Controls.Add(this.label13);
-            this.panel25.Location = new System.Drawing.Point(2, 2);
-            this.panel25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(302, 34);
-            this.panel25.TabIndex = 6;
-            // 
-            // txt_user_account
-            // 
-            this.txt_user_account.Location = new System.Drawing.Point(149, 8);
-            this.txt_user_account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_user_account.Name = "txt_user_account";
-            this.txt_user_account.ReadOnly = true;
-            this.txt_user_account.Size = new System.Drawing.Size(151, 20);
-            this.txt_user_account.TabIndex = 2;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(3, 6);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 24);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "USER :";
-            // 
-            // panel26
-            // 
-            this.panel26.Controls.Add(this.dgv_taikhoan);
-            this.panel26.Location = new System.Drawing.Point(4, 91);
-            this.panel26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(341, 315);
-            this.panel26.TabIndex = 6;
-            // 
-            // dgv_taikhoan
-            // 
-            this.dgv_taikhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_taikhoan.Location = new System.Drawing.Point(2, 2);
-            this.dgv_taikhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dgv_taikhoan.Name = "dgv_taikhoan";
-            this.dgv_taikhoan.RowHeadersWidth = 51;
-            this.dgv_taikhoan.RowTemplate.Height = 24;
-            this.dgv_taikhoan.Size = new System.Drawing.Size(337, 310);
-            this.dgv_taikhoan.TabIndex = 0;
-            this.dgv_taikhoan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_taikhoan_CellContentClick);
-            // 
-            // panel28
-            // 
-            this.panel28.Controls.Add(this.btn_xem_account);
-            this.panel28.Controls.Add(this.btn_sua_account);
-            this.panel28.Controls.Add(this.btn_xoa_account);
-            this.panel28.Controls.Add(this.btn_them_account);
-            this.panel28.Location = new System.Drawing.Point(4, 5);
-            this.panel28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(341, 81);
-            this.panel28.TabIndex = 4;
-            // 
-            // btn_xem_account
-            // 
-            this.btn_xem_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xem_account.Location = new System.Drawing.Point(264, 2);
-            this.btn_xem_account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_xem_account.Name = "btn_xem_account";
-            this.btn_xem_account.Size = new System.Drawing.Size(75, 76);
-            this.btn_xem_account.TabIndex = 3;
-            this.btn_xem_account.Text = "Xem";
-            this.btn_xem_account.UseVisualStyleBackColor = true;
-            // 
-            // btn_sua_account
-            // 
-            this.btn_sua_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sua_account.Location = new System.Drawing.Point(176, 2);
-            this.btn_sua_account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_sua_account.Name = "btn_sua_account";
-            this.btn_sua_account.Size = new System.Drawing.Size(75, 76);
-            this.btn_sua_account.TabIndex = 2;
-            this.btn_sua_account.Text = "Sửa";
-            this.btn_sua_account.UseVisualStyleBackColor = true;
-            // 
-            // btn_xoa_account
-            // 
-            this.btn_xoa_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoa_account.Location = new System.Drawing.Point(89, 2);
-            this.btn_xoa_account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_xoa_account.Name = "btn_xoa_account";
-            this.btn_xoa_account.Size = new System.Drawing.Size(75, 76);
-            this.btn_xoa_account.TabIndex = 1;
-            this.btn_xoa_account.Text = "Xóa";
-            this.btn_xoa_account.UseVisualStyleBackColor = true;
-            // 
-            // btn_them_account
-            // 
-            this.btn_them_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_them_account.Location = new System.Drawing.Point(2, 2);
-            this.btn_them_account.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_them_account.Name = "btn_them_account";
-            this.btn_them_account.Size = new System.Drawing.Size(75, 76);
-            this.btn_them_account.TabIndex = 0;
-            this.btn_them_account.Text = "Thêm";
-            this.btn_them_account.UseVisualStyleBackColor = true;
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "guest.png");
+            this.imageList1.Images.SetKeyName(1, "coffee.png");
+            this.imageList1.Images.SetKeyName(2, "Icon-clock.png");
+            this.imageList1.Images.SetKeyName(3, "Icon-Kho.png");
+            this.imageList1.Images.SetKeyName(4, "bill.png");
+            this.imageList1.Images.SetKeyName(5, "icon-dollar.png");
+            this.imageList1.Images.SetKeyName(6, "user-icon.png");
             // 
             // materialTabControl1
             // 
-            this.materialTabControl1.Controls.Add(this.tabPage1);
             this.materialTabControl1.Controls.Add(this.tabPage2);
+            this.materialTabControl1.Controls.Add(this.tabPage1);
+            this.materialTabControl1.Controls.Add(this.tabPage4);
+            this.materialTabControl1.Controls.Add(this.tabPage5);
+            this.materialTabControl1.Controls.Add(this.tabPage6);
             this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Location = new System.Drawing.Point(360, 3);
+            this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialTabControl1.ImageList = this.imageList1;
+            this.materialTabControl1.Location = new System.Drawing.Point(2, 52);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(200, 100);
-            this.materialTabControl1.TabIndex = 11;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(192, 74);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.materialTabControl1.Size = new System.Drawing.Size(946, 519);
+            this.materialTabControl1.TabIndex = 0;
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Controls.Add(this.materialCard1);
+            this.tabPage2.ImageKey = "guest.png";
+            this.tabPage2.Location = new System.Drawing.Point(4, 39);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 74);
+            this.tabPage2.Size = new System.Drawing.Size(938, 476);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Thành Viên";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.materialCard7);
+            this.tabPage1.ImageKey = "coffee.png";
+            this.tabPage1.Location = new System.Drawing.Point(4, 39);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(938, 476);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "Món";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.ImageKey = "Icon-Kho.png";
+            this.tabPage4.Location = new System.Drawing.Point(4, 39);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(938, 476);
+            this.tabPage4.TabIndex = 4;
+            this.tabPage4.Text = "Kho";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.ImageKey = "icon-dollar.png";
+            this.tabPage5.Location = new System.Drawing.Point(4, 39);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(938, 476);
+            this.tabPage5.TabIndex = 5;
+            this.tabPage5.Text = "Doanh Thu";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.materialCard8);
+            this.tabPage6.ImageKey = "user-icon.png";
+            this.tabPage6.Location = new System.Drawing.Point(4, 39);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(938, 476);
+            this.tabPage6.TabIndex = 6;
+            this.tabPage6.Text = "Nhân Viên";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // materialCard8
+            // 
+            this.materialCard8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard8.Controls.Add(this.materialCard9);
+            this.materialCard8.Controls.Add(this.materialCard11);
+            this.materialCard8.Controls.Add(this.materialCard12);
+            this.materialCard8.Controls.Add(this.materialCard15);
+            this.materialCard8.Controls.Add(this.dataGridView1);
+            this.materialCard8.Depth = 0;
+            this.materialCard8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialCard8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard8.Location = new System.Drawing.Point(0, 0);
+            this.materialCard8.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard8.Name = "materialCard8";
+            this.materialCard8.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard8.Size = new System.Drawing.Size(938, 476);
+            this.materialCard8.TabIndex = 3;
+            // 
+            // materialCard9
+            // 
+            this.materialCard9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard9.Controls.Add(this.materialTextBox25);
+            this.materialCard9.Controls.Add(this.materialLabel7);
+            this.materialCard9.Controls.Add(this.materialCard10);
+            this.materialCard9.Controls.Add(this.materialTextBox23);
+            this.materialCard9.Controls.Add(this.materialLabel10);
+            this.materialCard9.Controls.Add(this.materialTextBox24);
+            this.materialCard9.Controls.Add(this.materialLabel15);
+            this.materialCard9.Depth = 0;
+            this.materialCard9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard9.Location = new System.Drawing.Point(489, 3);
+            this.materialCard9.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard9.Name = "materialCard9";
+            this.materialCard9.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard9.Size = new System.Drawing.Size(436, 405);
+            this.materialCard9.TabIndex = 10;
+            // 
+            // materialTextBox25
+            // 
+            this.materialTextBox25.AnimateReadOnly = false;
+            this.materialTextBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialTextBox25.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialTextBox25.Depth = 0;
+            this.materialTextBox25.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox25.HideSelection = true;
+            this.materialTextBox25.LeadingIcon = null;
+            this.materialTextBox25.Location = new System.Drawing.Point(17, 228);
+            this.materialTextBox25.MaxLength = 32767;
+            this.materialTextBox25.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox25.Name = "materialTextBox25";
+            this.materialTextBox25.PasswordChar = '\0';
+            this.materialTextBox25.PrefixSuffixText = null;
+            this.materialTextBox25.ReadOnly = false;
+            this.materialTextBox25.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialTextBox25.SelectedText = "";
+            this.materialTextBox25.SelectionLength = 0;
+            this.materialTextBox25.SelectionStart = 0;
+            this.materialTextBox25.ShortcutsEnabled = true;
+            this.materialTextBox25.Size = new System.Drawing.Size(361, 48);
+            this.materialTextBox25.TabIndex = 26;
+            this.materialTextBox25.TabStop = false;
+            this.materialTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialTextBox25.TrailingIcon = null;
+            this.materialTextBox25.UseSystemPasswordChar = false;
+            // 
+            // materialLabel7
+            // 
+            this.materialLabel7.AutoSize = true;
+            this.materialLabel7.Depth = 0;
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel7.Location = new System.Drawing.Point(17, 197);
+            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel7.Name = "materialLabel7";
+            this.materialLabel7.Size = new System.Drawing.Size(119, 19);
+            this.materialLabel7.TabIndex = 25;
+            this.materialLabel7.Text = "Tên Khách Hàng";
+            // 
+            // materialCard10
+            // 
+            this.materialCard10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard10.Controls.Add(this.materialButton3);
+            this.materialCard10.Depth = 0;
+            this.materialCard10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard10.Location = new System.Drawing.Point(10, 336);
+            this.materialCard10.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard10.Name = "materialCard10";
+            this.materialCard10.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard10.Size = new System.Drawing.Size(368, 52);
+            this.materialCard10.TabIndex = 24;
+            // 
+            // materialButton3
+            // 
+            this.materialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton3.Depth = 0;
+            this.materialButton3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton3.HighEmphasis = true;
+            this.materialButton3.Icon = null;
+            this.materialButton3.Location = new System.Drawing.Point(5, 5);
+            this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton3.Name = "materialButton3";
+            this.materialButton3.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton3.Size = new System.Drawing.Size(358, 42);
+            this.materialButton3.TabIndex = 2;
+            this.materialButton3.Text = "Lưu";
+            this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton3.UseAccentColor = false;
+            this.materialButton3.UseVisualStyleBackColor = true;
+            // 
+            // materialTextBox23
+            // 
+            this.materialTextBox23.AnimateReadOnly = false;
+            this.materialTextBox23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialTextBox23.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialTextBox23.Depth = 0;
+            this.materialTextBox23.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox23.HideSelection = true;
+            this.materialTextBox23.LeadingIcon = null;
+            this.materialTextBox23.Location = new System.Drawing.Point(17, 130);
+            this.materialTextBox23.MaxLength = 32767;
+            this.materialTextBox23.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox23.Name = "materialTextBox23";
+            this.materialTextBox23.PasswordChar = '\0';
+            this.materialTextBox23.PrefixSuffixText = null;
+            this.materialTextBox23.ReadOnly = false;
+            this.materialTextBox23.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialTextBox23.SelectedText = "";
+            this.materialTextBox23.SelectionLength = 0;
+            this.materialTextBox23.SelectionStart = 0;
+            this.materialTextBox23.ShortcutsEnabled = true;
+            this.materialTextBox23.Size = new System.Drawing.Size(361, 48);
+            this.materialTextBox23.TabIndex = 23;
+            this.materialTextBox23.TabStop = false;
+            this.materialTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialTextBox23.TrailingIcon = null;
+            this.materialTextBox23.UseSystemPasswordChar = false;
+            // 
+            // materialLabel10
+            // 
+            this.materialLabel10.AutoSize = true;
+            this.materialLabel10.Depth = 0;
+            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel10.Location = new System.Drawing.Point(17, 99);
+            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel10.Name = "materialLabel10";
+            this.materialLabel10.Size = new System.Drawing.Size(119, 19);
+            this.materialLabel10.TabIndex = 22;
+            this.materialLabel10.Text = "Tên Khách Hàng";
+            // 
+            // materialTextBox24
+            // 
+            this.materialTextBox24.AnimateReadOnly = false;
+            this.materialTextBox24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialTextBox24.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialTextBox24.Depth = 0;
+            this.materialTextBox24.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox24.HideSelection = true;
+            this.materialTextBox24.LeadingIcon = null;
+            this.materialTextBox24.Location = new System.Drawing.Point(17, 42);
+            this.materialTextBox24.MaxLength = 32767;
+            this.materialTextBox24.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox24.Name = "materialTextBox24";
+            this.materialTextBox24.PasswordChar = '\0';
+            this.materialTextBox24.PrefixSuffixText = null;
+            this.materialTextBox24.ReadOnly = false;
+            this.materialTextBox24.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialTextBox24.SelectedText = "";
+            this.materialTextBox24.SelectionLength = 0;
+            this.materialTextBox24.SelectionStart = 0;
+            this.materialTextBox24.ShortcutsEnabled = true;
+            this.materialTextBox24.Size = new System.Drawing.Size(361, 48);
+            this.materialTextBox24.TabIndex = 21;
+            this.materialTextBox24.TabStop = false;
+            this.materialTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialTextBox24.TrailingIcon = null;
+            this.materialTextBox24.UseSystemPasswordChar = false;
+            // 
+            // materialLabel15
+            // 
+            this.materialLabel15.AutoSize = true;
+            this.materialLabel15.Depth = 0;
+            this.materialLabel15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel15.Location = new System.Drawing.Point(17, 11);
+            this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel15.Name = "materialLabel15";
+            this.materialLabel15.Size = new System.Drawing.Size(115, 19);
+            this.materialLabel15.TabIndex = 20;
+            this.materialLabel15.Text = "Mã Khách Hàng";
+            // 
+            // materialCard11
+            // 
+            this.materialCard11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard11.Controls.Add(this.materialButton7);
+            this.materialCard11.Depth = 0;
+            this.materialCard11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard11.Location = new System.Drawing.Point(359, 411);
+            this.materialCard11.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard11.Name = "materialCard11";
+            this.materialCard11.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard11.Size = new System.Drawing.Size(122, 52);
+            this.materialCard11.TabIndex = 8;
+            // 
+            // materialButton7
+            // 
+            this.materialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton7.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton7.Depth = 0;
+            this.materialButton7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton7.HighEmphasis = true;
+            this.materialButton7.Icon = null;
+            this.materialButton7.Location = new System.Drawing.Point(5, 5);
+            this.materialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton7.Name = "materialButton7";
+            this.materialButton7.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton7.Size = new System.Drawing.Size(112, 42);
+            this.materialButton7.TabIndex = 2;
+            this.materialButton7.Text = "Xóa";
+            this.materialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton7.UseAccentColor = false;
+            this.materialButton7.UseVisualStyleBackColor = true;
+            // 
+            // materialCard12
+            // 
+            this.materialCard12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard12.Controls.Add(this.materialButton8);
+            this.materialCard12.Depth = 0;
+            this.materialCard12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard12.Location = new System.Drawing.Point(176, 411);
+            this.materialCard12.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard12.Name = "materialCard12";
+            this.materialCard12.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard12.Size = new System.Drawing.Size(122, 52);
+            this.materialCard12.TabIndex = 9;
+            // 
+            // materialButton8
+            // 
+            this.materialButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton8.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton8.Depth = 0;
+            this.materialButton8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton8.HighEmphasis = true;
+            this.materialButton8.Icon = null;
+            this.materialButton8.Location = new System.Drawing.Point(5, 5);
+            this.materialButton8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton8.Name = "materialButton8";
+            this.materialButton8.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton8.Size = new System.Drawing.Size(112, 42);
+            this.materialButton8.TabIndex = 2;
+            this.materialButton8.Text = "Xem";
+            this.materialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton8.UseAccentColor = false;
+            this.materialButton8.UseVisualStyleBackColor = true;
+            // 
+            // materialCard15
+            // 
+            this.materialCard15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard15.Controls.Add(this.materialButton9);
+            this.materialCard15.Depth = 0;
+            this.materialCard15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard15.Location = new System.Drawing.Point(3, 411);
+            this.materialCard15.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard15.Name = "materialCard15";
+            this.materialCard15.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard15.Size = new System.Drawing.Size(122, 52);
+            this.materialCard15.TabIndex = 7;
+            // 
+            // materialButton9
+            // 
+            this.materialButton9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton9.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton9.Depth = 0;
+            this.materialButton9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton9.HighEmphasis = true;
+            this.materialButton9.Icon = null;
+            this.materialButton9.Location = new System.Drawing.Point(5, 5);
+            this.materialButton9.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton9.Name = "materialButton9";
+            this.materialButton9.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton9.Size = new System.Drawing.Size(112, 42);
+            this.materialButton9.TabIndex = 2;
+            this.materialButton9.Text = "Thêm";
+            this.materialButton9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton9.UseAccentColor = false;
+            this.materialButton9.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(478, 405);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // materialCard1
+            // 
+            this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard1.Controls.Add(this.materialCard5);
+            this.materialCard1.Controls.Add(this.materialCard4);
+            this.materialCard1.Controls.Add(this.materialCard3);
+            this.materialCard1.Controls.Add(this.materialCard2);
+            this.materialCard1.Controls.Add(this.dataGridView2);
+            this.materialCard1.Depth = 0;
+            this.materialCard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard1.Location = new System.Drawing.Point(3, 3);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard1.Name = "materialCard1";
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard1.Size = new System.Drawing.Size(932, 470);
+            this.materialCard1.TabIndex = 2;
+            // 
+            // materialCard5
+            // 
+            this.materialCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard5.Controls.Add(this.materialCard6);
+            this.materialCard5.Controls.Add(this.materialLabel5);
+            this.materialCard5.Controls.Add(this.numericUpDown2);
+            this.materialCard5.Controls.Add(this.materialLabel4);
+            this.materialCard5.Controls.Add(this.materialLabel3);
+            this.materialCard5.Controls.Add(this.numericUpDown1);
+            this.materialCard5.Controls.Add(this.textBox1);
+            this.materialCard5.Controls.Add(this.materialTextBox22);
+            this.materialCard5.Controls.Add(this.materialLabel2);
+            this.materialCard5.Controls.Add(this.materialTextBox21);
+            this.materialCard5.Controls.Add(this.materialLabel1);
+            this.materialCard5.Depth = 0;
+            this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard5.Location = new System.Drawing.Point(489, 3);
+            this.materialCard5.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard5.Name = "materialCard5";
+            this.materialCard5.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard5.Size = new System.Drawing.Size(436, 405);
+            this.materialCard5.TabIndex = 10;
+            // 
+            // materialCard6
+            // 
+            this.materialCard6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard6.Controls.Add(this.materialButton1);
+            this.materialCard6.Depth = 0;
+            this.materialCard6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard6.Location = new System.Drawing.Point(10, 339);
+            this.materialCard6.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard6.Name = "materialCard6";
+            this.materialCard6.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard6.Size = new System.Drawing.Size(368, 52);
+            this.materialCard6.TabIndex = 10;
+            // 
+            // materialButton1
+            // 
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = null;
+            this.materialButton1.Location = new System.Drawing.Point(5, 5);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Size = new System.Drawing.Size(358, 42);
+            this.materialButton1.TabIndex = 2;
+            this.materialButton1.Text = "Lưu";
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel5.Location = new System.Drawing.Point(17, 285);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(108, 19);
+            this.materialLabel5.TabIndex = 10;
+            this.materialLabel5.Text = "Điểm Giảm Giá";
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(163, 241);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(75, 20);
+            this.numericUpDown2.TabIndex = 9;
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.Location = new System.Drawing.Point(17, 242);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(129, 19);
+            this.materialLabel4.TabIndex = 8;
+            this.materialLabel4.Text = "Số Lần Mua Hàng";
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.Location = new System.Drawing.Point(17, 199);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(93, 19);
+            this.materialLabel3.TabIndex = 7;
+            this.materialLabel3.Text = "Điểm tích lũy";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(163, 198);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(75, 20);
+            this.numericUpDown1.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(163, 285);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(76, 20);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.Text = "0%";
+            // 
+            // materialTextBox22
+            // 
+            this.materialTextBox22.AnimateReadOnly = false;
+            this.materialTextBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialTextBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialTextBox22.Depth = 0;
+            this.materialTextBox22.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox22.HideSelection = true;
+            this.materialTextBox22.LeadingIcon = null;
+            this.materialTextBox22.Location = new System.Drawing.Point(17, 133);
+            this.materialTextBox22.MaxLength = 32767;
+            this.materialTextBox22.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox22.Name = "materialTextBox22";
+            this.materialTextBox22.PasswordChar = '\0';
+            this.materialTextBox22.PrefixSuffixText = null;
+            this.materialTextBox22.ReadOnly = false;
+            this.materialTextBox22.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialTextBox22.SelectedText = "";
+            this.materialTextBox22.SelectionLength = 0;
+            this.materialTextBox22.SelectionStart = 0;
+            this.materialTextBox22.ShortcutsEnabled = true;
+            this.materialTextBox22.Size = new System.Drawing.Size(361, 48);
+            this.materialTextBox22.TabIndex = 4;
+            this.materialTextBox22.TabStop = false;
+            this.materialTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialTextBox22.TrailingIcon = null;
+            this.materialTextBox22.UseSystemPasswordChar = false;
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.Location = new System.Drawing.Point(17, 102);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(119, 19);
+            this.materialLabel2.TabIndex = 3;
+            this.materialLabel2.Text = "Tên Khách Hàng";
+            // 
+            // materialTextBox21
+            // 
+            this.materialTextBox21.AnimateReadOnly = false;
+            this.materialTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialTextBox21.Depth = 0;
+            this.materialTextBox21.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox21.HideSelection = true;
+            this.materialTextBox21.LeadingIcon = null;
+            this.materialTextBox21.Location = new System.Drawing.Point(17, 45);
+            this.materialTextBox21.MaxLength = 32767;
+            this.materialTextBox21.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox21.Name = "materialTextBox21";
+            this.materialTextBox21.PasswordChar = '\0';
+            this.materialTextBox21.PrefixSuffixText = null;
+            this.materialTextBox21.ReadOnly = false;
+            this.materialTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialTextBox21.SelectedText = "";
+            this.materialTextBox21.SelectionLength = 0;
+            this.materialTextBox21.SelectionStart = 0;
+            this.materialTextBox21.ShortcutsEnabled = true;
+            this.materialTextBox21.Size = new System.Drawing.Size(361, 48);
+            this.materialTextBox21.TabIndex = 2;
+            this.materialTextBox21.TabStop = false;
+            this.materialTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialTextBox21.TrailingIcon = null;
+            this.materialTextBox21.UseSystemPasswordChar = false;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(17, 14);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(115, 19);
+            this.materialLabel1.TabIndex = 0;
+            this.materialLabel1.Text = "Mã Khách Hàng";
+            // 
+            // materialCard4
+            // 
+            this.materialCard4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard4.Controls.Add(this.materialButton6);
+            this.materialCard4.Depth = 0;
+            this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard4.Location = new System.Drawing.Point(359, 411);
+            this.materialCard4.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard4.Name = "materialCard4";
+            this.materialCard4.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard4.Size = new System.Drawing.Size(122, 52);
+            this.materialCard4.TabIndex = 8;
+            // 
+            // materialButton6
+            // 
+            this.materialButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton6.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton6.Depth = 0;
+            this.materialButton6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton6.HighEmphasis = true;
+            this.materialButton6.Icon = null;
+            this.materialButton6.Location = new System.Drawing.Point(5, 5);
+            this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton6.Name = "materialButton6";
+            this.materialButton6.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton6.Size = new System.Drawing.Size(112, 42);
+            this.materialButton6.TabIndex = 2;
+            this.materialButton6.Text = "Xóa";
+            this.materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton6.UseAccentColor = false;
+            this.materialButton6.UseVisualStyleBackColor = true;
+            // 
+            // materialCard3
+            // 
+            this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard3.Controls.Add(this.materialButton5);
+            this.materialCard3.Depth = 0;
+            this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard3.Location = new System.Drawing.Point(176, 411);
+            this.materialCard3.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard3.Name = "materialCard3";
+            this.materialCard3.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard3.Size = new System.Drawing.Size(122, 52);
+            this.materialCard3.TabIndex = 9;
+            // 
+            // materialButton5
+            // 
+            this.materialButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton5.Depth = 0;
+            this.materialButton5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton5.HighEmphasis = true;
+            this.materialButton5.Icon = null;
+            this.materialButton5.Location = new System.Drawing.Point(5, 5);
+            this.materialButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton5.Name = "materialButton5";
+            this.materialButton5.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton5.Size = new System.Drawing.Size(112, 42);
+            this.materialButton5.TabIndex = 2;
+            this.materialButton5.Text = "Xem";
+            this.materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton5.UseAccentColor = false;
+            this.materialButton5.UseVisualStyleBackColor = true;
+            // 
+            // materialCard2
+            // 
+            this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard2.Controls.Add(this.materialButton2);
+            this.materialCard2.Depth = 0;
+            this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard2.Location = new System.Drawing.Point(3, 411);
+            this.materialCard2.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard2.Name = "materialCard2";
+            this.materialCard2.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard2.Size = new System.Drawing.Size(122, 52);
+            this.materialCard2.TabIndex = 7;
+            // 
+            // materialButton2
+            // 
+            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton2.Depth = 0;
+            this.materialButton2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton2.HighEmphasis = true;
+            this.materialButton2.Icon = null;
+            this.materialButton2.Location = new System.Drawing.Point(5, 5);
+            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton2.Name = "materialButton2";
+            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton2.Size = new System.Drawing.Size(112, 42);
+            this.materialButton2.TabIndex = 2;
+            this.materialButton2.Text = "Thêm";
+            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton2.UseAccentColor = false;
+            this.materialButton2.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(478, 405);
+            this.dataGridView2.TabIndex = 6;
+            // 
+            // materialCard7
+            // 
+            this.materialCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard7.Controls.Add(this.materialCard16);
+            this.materialCard7.Controls.Add(this.materialCard18);
+            this.materialCard7.Controls.Add(this.materialCard19);
+            this.materialCard7.Controls.Add(this.materialCard20);
+            this.materialCard7.Controls.Add(this.dataGridView4);
+            this.materialCard7.Depth = 0;
+            this.materialCard7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialCard7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard7.Location = new System.Drawing.Point(3, 3);
+            this.materialCard7.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard7.Name = "materialCard7";
+            this.materialCard7.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard7.Size = new System.Drawing.Size(932, 470);
+            this.materialCard7.TabIndex = 3;
+            // 
+            // materialCard16
+            // 
+            this.materialCard16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard16.Controls.Add(this.materialTextBox28);
+            this.materialCard16.Controls.Add(this.materialLabel6);
+            this.materialCard16.Controls.Add(this.materialCard17);
+            this.materialCard16.Controls.Add(this.materialTextBox26);
+            this.materialCard16.Controls.Add(this.materialLabel17);
+            this.materialCard16.Controls.Add(this.materialTextBox27);
+            this.materialCard16.Controls.Add(this.materialLabel18);
+            this.materialCard16.Depth = 0;
+            this.materialCard16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard16.Location = new System.Drawing.Point(489, 3);
+            this.materialCard16.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard16.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard16.Name = "materialCard16";
+            this.materialCard16.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard16.Size = new System.Drawing.Size(436, 405);
+            this.materialCard16.TabIndex = 10;
+            // 
+            // materialCard17
+            // 
+            this.materialCard17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard17.Controls.Add(this.materialButton4);
+            this.materialCard17.Depth = 0;
+            this.materialCard17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard17.Location = new System.Drawing.Point(10, 339);
+            this.materialCard17.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard17.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard17.Name = "materialCard17";
+            this.materialCard17.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard17.Size = new System.Drawing.Size(368, 52);
+            this.materialCard17.TabIndex = 10;
+            // 
+            // materialButton4
+            // 
+            this.materialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton4.Depth = 0;
+            this.materialButton4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton4.HighEmphasis = true;
+            this.materialButton4.Icon = null;
+            this.materialButton4.Location = new System.Drawing.Point(5, 5);
+            this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton4.Name = "materialButton4";
+            this.materialButton4.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton4.Size = new System.Drawing.Size(358, 42);
+            this.materialButton4.TabIndex = 2;
+            this.materialButton4.Text = "Lưu";
+            this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton4.UseAccentColor = false;
+            this.materialButton4.UseVisualStyleBackColor = true;
+            // 
+            // materialTextBox26
+            // 
+            this.materialTextBox26.AnimateReadOnly = false;
+            this.materialTextBox26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialTextBox26.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialTextBox26.Depth = 0;
+            this.materialTextBox26.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox26.HideSelection = true;
+            this.materialTextBox26.LeadingIcon = null;
+            this.materialTextBox26.Location = new System.Drawing.Point(17, 133);
+            this.materialTextBox26.MaxLength = 32767;
+            this.materialTextBox26.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox26.Name = "materialTextBox26";
+            this.materialTextBox26.PasswordChar = '\0';
+            this.materialTextBox26.PrefixSuffixText = null;
+            this.materialTextBox26.ReadOnly = false;
+            this.materialTextBox26.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialTextBox26.SelectedText = "";
+            this.materialTextBox26.SelectionLength = 0;
+            this.materialTextBox26.SelectionStart = 0;
+            this.materialTextBox26.ShortcutsEnabled = true;
+            this.materialTextBox26.Size = new System.Drawing.Size(361, 48);
+            this.materialTextBox26.TabIndex = 4;
+            this.materialTextBox26.TabStop = false;
+            this.materialTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialTextBox26.TrailingIcon = null;
+            this.materialTextBox26.UseSystemPasswordChar = false;
+            // 
+            // materialLabel17
+            // 
+            this.materialLabel17.AutoSize = true;
+            this.materialLabel17.Depth = 0;
+            this.materialLabel17.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel17.Location = new System.Drawing.Point(17, 102);
+            this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel17.Name = "materialLabel17";
+            this.materialLabel17.Size = new System.Drawing.Size(119, 19);
+            this.materialLabel17.TabIndex = 3;
+            this.materialLabel17.Text = "Tên Khách Hàng";
+            // 
+            // materialTextBox27
+            // 
+            this.materialTextBox27.AnimateReadOnly = false;
+            this.materialTextBox27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialTextBox27.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialTextBox27.Depth = 0;
+            this.materialTextBox27.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox27.HideSelection = true;
+            this.materialTextBox27.LeadingIcon = null;
+            this.materialTextBox27.Location = new System.Drawing.Point(17, 45);
+            this.materialTextBox27.MaxLength = 32767;
+            this.materialTextBox27.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox27.Name = "materialTextBox27";
+            this.materialTextBox27.PasswordChar = '\0';
+            this.materialTextBox27.PrefixSuffixText = null;
+            this.materialTextBox27.ReadOnly = false;
+            this.materialTextBox27.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialTextBox27.SelectedText = "";
+            this.materialTextBox27.SelectionLength = 0;
+            this.materialTextBox27.SelectionStart = 0;
+            this.materialTextBox27.ShortcutsEnabled = true;
+            this.materialTextBox27.Size = new System.Drawing.Size(361, 48);
+            this.materialTextBox27.TabIndex = 2;
+            this.materialTextBox27.TabStop = false;
+            this.materialTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialTextBox27.TrailingIcon = null;
+            this.materialTextBox27.UseSystemPasswordChar = false;
+            // 
+            // materialLabel18
+            // 
+            this.materialLabel18.AutoSize = true;
+            this.materialLabel18.Depth = 0;
+            this.materialLabel18.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel18.Location = new System.Drawing.Point(17, 14);
+            this.materialLabel18.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel18.Name = "materialLabel18";
+            this.materialLabel18.Size = new System.Drawing.Size(115, 19);
+            this.materialLabel18.TabIndex = 0;
+            this.materialLabel18.Text = "Mã Khách Hàng";
+            // 
+            // materialCard18
+            // 
+            this.materialCard18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard18.Controls.Add(this.materialButton10);
+            this.materialCard18.Depth = 0;
+            this.materialCard18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard18.Location = new System.Drawing.Point(359, 411);
+            this.materialCard18.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard18.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard18.Name = "materialCard18";
+            this.materialCard18.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard18.Size = new System.Drawing.Size(122, 52);
+            this.materialCard18.TabIndex = 8;
+            // 
+            // materialButton10
+            // 
+            this.materialButton10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton10.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton10.Depth = 0;
+            this.materialButton10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton10.HighEmphasis = true;
+            this.materialButton10.Icon = null;
+            this.materialButton10.Location = new System.Drawing.Point(5, 5);
+            this.materialButton10.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton10.Name = "materialButton10";
+            this.materialButton10.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton10.Size = new System.Drawing.Size(112, 42);
+            this.materialButton10.TabIndex = 2;
+            this.materialButton10.Text = "Xóa";
+            this.materialButton10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton10.UseAccentColor = false;
+            this.materialButton10.UseVisualStyleBackColor = true;
+            // 
+            // materialCard19
+            // 
+            this.materialCard19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard19.Controls.Add(this.materialButton11);
+            this.materialCard19.Depth = 0;
+            this.materialCard19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard19.Location = new System.Drawing.Point(176, 411);
+            this.materialCard19.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard19.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard19.Name = "materialCard19";
+            this.materialCard19.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard19.Size = new System.Drawing.Size(122, 52);
+            this.materialCard19.TabIndex = 9;
+            // 
+            // materialButton11
+            // 
+            this.materialButton11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton11.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton11.Depth = 0;
+            this.materialButton11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton11.HighEmphasis = true;
+            this.materialButton11.Icon = null;
+            this.materialButton11.Location = new System.Drawing.Point(5, 5);
+            this.materialButton11.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton11.Name = "materialButton11";
+            this.materialButton11.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton11.Size = new System.Drawing.Size(112, 42);
+            this.materialButton11.TabIndex = 2;
+            this.materialButton11.Text = "Xem";
+            this.materialButton11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton11.UseAccentColor = false;
+            this.materialButton11.UseVisualStyleBackColor = true;
+            // 
+            // materialCard20
+            // 
+            this.materialCard20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard20.Controls.Add(this.materialButton12);
+            this.materialCard20.Depth = 0;
+            this.materialCard20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard20.Location = new System.Drawing.Point(3, 411);
+            this.materialCard20.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard20.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard20.Name = "materialCard20";
+            this.materialCard20.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard20.Size = new System.Drawing.Size(122, 52);
+            this.materialCard20.TabIndex = 7;
+            // 
+            // materialButton12
+            // 
+            this.materialButton12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton12.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton12.Depth = 0;
+            this.materialButton12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialButton12.HighEmphasis = true;
+            this.materialButton12.Icon = null;
+            this.materialButton12.Location = new System.Drawing.Point(5, 5);
+            this.materialButton12.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton12.Name = "materialButton12";
+            this.materialButton12.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton12.Size = new System.Drawing.Size(112, 42);
+            this.materialButton12.TabIndex = 2;
+            this.materialButton12.Text = "Thêm";
+            this.materialButton12.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton12.UseAccentColor = false;
+            this.materialButton12.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(478, 405);
+            this.dataGridView4.TabIndex = 6;
+            // 
+            // materialTextBox28
+            // 
+            this.materialTextBox28.AnimateReadOnly = false;
+            this.materialTextBox28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialTextBox28.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialTextBox28.Depth = 0;
+            this.materialTextBox28.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox28.HideSelection = true;
+            this.materialTextBox28.LeadingIcon = null;
+            this.materialTextBox28.Location = new System.Drawing.Point(17, 229);
+            this.materialTextBox28.MaxLength = 32767;
+            this.materialTextBox28.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox28.Name = "materialTextBox28";
+            this.materialTextBox28.PasswordChar = '\0';
+            this.materialTextBox28.PrefixSuffixText = null;
+            this.materialTextBox28.ReadOnly = false;
+            this.materialTextBox28.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialTextBox28.SelectedText = "";
+            this.materialTextBox28.SelectionLength = 0;
+            this.materialTextBox28.SelectionStart = 0;
+            this.materialTextBox28.ShortcutsEnabled = true;
+            this.materialTextBox28.Size = new System.Drawing.Size(361, 48);
+            this.materialTextBox28.TabIndex = 12;
+            this.materialTextBox28.TabStop = false;
+            this.materialTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialTextBox28.TrailingIcon = null;
+            this.materialTextBox28.UseSystemPasswordChar = false;
+            // 
+            // materialLabel6
+            // 
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel6.Location = new System.Drawing.Point(17, 198);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(119, 19);
+            this.materialLabel6.TabIndex = 11;
+            this.materialLabel6.Text = "Tên Khách Hàng";
             // 
             // Admin
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 475);
-            this.Controls.Add(this.tc_Ad);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClientSize = new System.Drawing.Size(950, 573);
+            this.Controls.Add(this.materialTabControl1);
+            this.DrawerShowIconsWhenHidden = true;
+            this.DrawerTabControl = this.materialTabControl1;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Admin";
             this.Padding = new System.Windows.Forms.Padding(2, 52, 2, 2);
             this.Text = "Admin";
             this.Load += new System.EventHandler(this.Admin_Load);
-            this.tc_Ad.ResumeLayout(false);
-            this.tp_Bill.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_blii)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.tp_food.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nup_gia_food)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_food)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.tp_danhmuc.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_danhmuc)).EndInit();
-            this.panel17.ResumeLayout(false);
-            this.tp_banan.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
-            this.panel18.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_banan)).EndInit();
-            this.panel19.ResumeLayout(false);
-            this.tp_Acc.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
-            this.panel23.ResumeLayout(false);
-            this.panel23.PerformLayout();
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
-            this.panel25.ResumeLayout(false);
-            this.panel25.PerformLayout();
-            this.panel26.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_taikhoan)).EndInit();
-            this.panel28.ResumeLayout(false);
             this.materialTabControl1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.materialCard8.ResumeLayout(false);
+            this.materialCard9.ResumeLayout(false);
+            this.materialCard9.PerformLayout();
+            this.materialCard10.ResumeLayout(false);
+            this.materialCard10.PerformLayout();
+            this.materialCard11.ResumeLayout(false);
+            this.materialCard11.PerformLayout();
+            this.materialCard12.ResumeLayout(false);
+            this.materialCard12.PerformLayout();
+            this.materialCard15.ResumeLayout(false);
+            this.materialCard15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.materialCard1.ResumeLayout(false);
+            this.materialCard5.ResumeLayout(false);
+            this.materialCard5.PerformLayout();
+            this.materialCard6.ResumeLayout(false);
+            this.materialCard6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.materialCard4.ResumeLayout(false);
+            this.materialCard4.PerformLayout();
+            this.materialCard3.ResumeLayout(false);
+            this.materialCard3.PerformLayout();
+            this.materialCard2.ResumeLayout(false);
+            this.materialCard2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.materialCard7.ResumeLayout(false);
+            this.materialCard16.ResumeLayout(false);
+            this.materialCard16.PerformLayout();
+            this.materialCard17.ResumeLayout(false);
+            this.materialCard17.PerformLayout();
+            this.materialCard18.ResumeLayout(false);
+            this.materialCard18.PerformLayout();
+            this.materialCard19.ResumeLayout(false);
+            this.materialCard19.PerformLayout();
+            this.materialCard20.ResumeLayout(false);
+            this.materialCard20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tc_Ad;
-        private System.Windows.Forms.TabPage tp_Bill;
-        private System.Windows.Forms.TabPage tp_food;
-        private System.Windows.Forms.TabPage tp_danhmuc;
-        private System.Windows.Forms.TabPage tp_banan;
-        private System.Windows.Forms.TabPage tp_Acc;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.DataGridView dgv_blii;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btn_xembill;
-        private System.Windows.Forms.DateTimePicker dtp_bill_toi;
-        private System.Windows.Forms.DateTimePicker dtp_bill_tu;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DataGridView dgv_food;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_xem_food;
-        private System.Windows.Forms.Button btn_sua_food;
-        private System.Windows.Forms.Button btn_xoa_food;
-        private System.Windows.Forms.Button btn_them_food;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox txt_tenmon_food;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox txt_id_food;
-        private System.Windows.Forms.Label label1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker2;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.ComboBox cb_danhmuc_food;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txt_tim_food;
-        private System.Windows.Forms.Button btn_tim_food;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.NumericUpDown nup_gia_food;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TextBox txt_tendanhmuc;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.TextBox txt_id__danhmuc;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.DataGridView dgv_danhmuc;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Button btn_xem__danhmuc;
-        private System.Windows.Forms.Button btn_sua__danhmuc;
-        private System.Windows.Forms.Button btn_xoa__danhmuc;
-        private System.Windows.Forms.Button btn_them_danhmuc;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.TextBox txt_tenban;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.TextBox txt_id_ban;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.DataGridView dgv_banan;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Button btn_xem_ban;
-        private System.Windows.Forms.Button btn_sua_ban;
-        private System.Windows.Forms.Button btn_xoa_ban;
-        private System.Windows.Forms.Button btn_them_ban;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.ComboBox cb_trangthai_ban;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.ComboBox cb_loaitaikhoan_account;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.TextBox txt_tenhienthi_account;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.TextBox txt_user_account;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.DataGridView dgv_taikhoan;
-        private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.Button btn_xem_account;
-        private System.Windows.Forms.Button btn_sua_account;
-        private System.Windows.Forms.Button btn_xoa_account;
-        private System.Windows.Forms.Button btn_them_account;
-        private System.Windows.Forms.Button btn_setpassword;
+        private System.Windows.Forms.ImageList imageList1;
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
+        private MaterialSkin.Controls.MaterialCard materialCard8;
+        private MaterialSkin.Controls.MaterialCard materialCard9;
+        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox25;
+        private MaterialSkin.Controls.MaterialLabel materialLabel7;
+        private MaterialSkin.Controls.MaterialCard materialCard10;
+        private MaterialSkin.Controls.MaterialButton materialButton3;
+        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox23;
+        private MaterialSkin.Controls.MaterialLabel materialLabel10;
+        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox24;
+        private MaterialSkin.Controls.MaterialLabel materialLabel15;
+        private MaterialSkin.Controls.MaterialCard materialCard11;
+        private MaterialSkin.Controls.MaterialButton materialButton7;
+        private MaterialSkin.Controls.MaterialCard materialCard12;
+        private MaterialSkin.Controls.MaterialButton materialButton8;
+        private MaterialSkin.Controls.MaterialCard materialCard15;
+        private MaterialSkin.Controls.MaterialButton materialButton9;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private MaterialSkin.Controls.MaterialCard materialCard1;
+        private MaterialSkin.Controls.MaterialCard materialCard5;
+        private MaterialSkin.Controls.MaterialCard materialCard6;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.TextBox textBox1;
+        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox22;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox21;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialCard materialCard4;
+        private MaterialSkin.Controls.MaterialButton materialButton6;
+        private MaterialSkin.Controls.MaterialCard materialCard3;
+        private MaterialSkin.Controls.MaterialButton materialButton5;
+        private MaterialSkin.Controls.MaterialCard materialCard2;
+        private MaterialSkin.Controls.MaterialButton materialButton2;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private MaterialSkin.Controls.MaterialCard materialCard7;
+        private MaterialSkin.Controls.MaterialCard materialCard16;
+        private MaterialSkin.Controls.MaterialCard materialCard17;
+        private MaterialSkin.Controls.MaterialButton materialButton4;
+        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox26;
+        private MaterialSkin.Controls.MaterialLabel materialLabel17;
+        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox27;
+        private MaterialSkin.Controls.MaterialLabel materialLabel18;
+        private MaterialSkin.Controls.MaterialCard materialCard18;
+        private MaterialSkin.Controls.MaterialButton materialButton10;
+        private MaterialSkin.Controls.MaterialCard materialCard19;
+        private MaterialSkin.Controls.MaterialButton materialButton11;
+        private MaterialSkin.Controls.MaterialCard materialCard20;
+        private MaterialSkin.Controls.MaterialButton materialButton12;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox28;
+        private MaterialSkin.Controls.MaterialLabel materialLabel6;
     }
 }
