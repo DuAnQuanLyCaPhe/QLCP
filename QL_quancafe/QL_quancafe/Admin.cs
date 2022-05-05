@@ -50,7 +50,7 @@ namespace QL_quancafe
 
         private void Admin_Load(object sender, EventArgs e)
         {
-            active_dgv_acc();
+            
         }
 
         private void btn_setpassword_Click(object sender, EventArgs e)
@@ -79,6 +79,21 @@ namespace QL_quancafe
         }
 
         private void materialCard8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void rad_nam_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void materialCard13_Paint(object sender, PaintEventArgs e)
         {
 
         }
