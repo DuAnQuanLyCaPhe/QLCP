@@ -97,5 +97,10 @@ namespace QL_quancafe
         {
 
         }
+
+        private void materialButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

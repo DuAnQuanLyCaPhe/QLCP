@@ -34,3 +34,23 @@ D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\Class_QLcafe.pdb
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.CopyComplete
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.Form1.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\bin\Debug\QL_quancafe.exe.config
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\bin\Debug\QL_quancafe.exe
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\bin\Debug\QL_quancafe.pdb
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\bin\Debug\Class_QLcafe.dll
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\bin\Debug\MaterialSkin.dll
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\bin\Debug\Class_QLcafe.pdb
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.AssemblyReference.cache
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.SuggestedBindingRedirects.cache
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.AccountProfile.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.Admin.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.Form1.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.login.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.Phieunhap.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.Properties.Resources.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.TableManager.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.GenerateResource.cache
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.CoreCompileInputs.cache
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.CopyComplete
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.exe
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.pdb
