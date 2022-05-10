@@ -150,13 +150,34 @@ namespace QL_quancafe
         }
         //======================================================
         // Phần Món
-        public void DataGV_Mon()
+        public void CB_LOAIMON()
         {
-            dataGV_cmon.DataSource = TasmaMain.LietKeDuLieu("MON", kn);
+            DataTable dt = TasmaMain.LietKeDuLieu("LOAIMON", kn);
+            cb_loaimon.DataSource = dt;
+            cb_loaimon.DisplayMember = "TENLOAIMON";
+            cb_loaimon.ValueMember = "MALOAIMON";
+            CB_MON();
+        }
+        public void CB_MON()
+        {
+            DataTable dt = TasmaMain.LietKeDuLieu("MON", "MaLoaiMon", cb_loaimon.SelectedValue, kn);
+            cb_tenmon.DataSource = dt;
+            cb_tenmon.DisplayMember = "TENMON";
+            cb_tenmon.ValueMember = "ID";
+        }
+        public int getBill()
+        {
+            if (cb_tenmon.Items.Count > 0)
+            {
+                DataTable dt_c = TasmaMain.LietKeDuLieu("MON", "ID", cb_tenmon.SelectedValue, kn);
+                return Convert.ToInt32(dt_c.Rows[0]["DonGia"]);
+            }
+            else return 0;
         }
         private void Admin_Load(object sender, EventArgs e)
         {
             DataGV_ThanhVien();
+            CB_LOAIMON();
         }
 
         private void rad_nam_CheckedChanged(object sender, EventArgs e)
@@ -166,7 +187,41 @@ namespace QL_quancafe
 
         private void btn_datm_Click(object sender, EventArgs e)
         {
+            int tongtien = 0;
+            int tongsl = 0;
+            Dictionary<string, object> DO = new Dictionary<string, object>();
+            DO.Add("TENMON", cb_tenmon.Text);
+            DO.Add("DONGIA", txt_giatien.Text);
+            DO.Add("SOLUONG", nup_slmon.Value);
+            DO.Add("LOAIMON", cb_loaimon.Text);
+            dataGV_cmon.Rows.Add(DO["TENMON"], DO["LOAIMON"], DO["SOLUONG"], DO["DONGIA"]);
+            for (int i = 0; i < dataGV_cmon.Rows.Count - 1; i++)
+            {
+                tongtien += Convert.ToInt32(dataGV_cmon.Rows[i].Cells["DONGIA"].Value);
+                tongsl += Convert.ToInt32(dataGV_cmon.Rows[i].Cells["SOLUONG"].Value);
+            }
+            txt_ttm.Text = tongtien.ToString();
+            nup_tslm.Value = tongsl;
+        }
 
+        private void txt_ttmon_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_tenmon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txt_giatien.Text = Convert.ToInt32(nup_slmon.Value) * getBill() + "";
+        }
+
+        private void cb_loaimon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CB_MON();
+        }
+
+        private void nup_slmon_ValueChanged(object sender, EventArgs e)
+        {
+            txt_giatien.Text = Convert.ToInt32(nup_slmon.Value) * getBill() + "";
         }
     }
 }

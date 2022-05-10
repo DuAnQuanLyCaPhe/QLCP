@@ -33,3 +33,4 @@ D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.CopyComplete
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\TasmaControl.dll
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\TasmaControl.pdb
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.Phieunhap.resources
