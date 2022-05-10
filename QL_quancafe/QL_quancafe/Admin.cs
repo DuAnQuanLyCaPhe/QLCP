@@ -223,5 +223,10 @@ namespace QL_quancafe
         {
             txt_giatien.Text = Convert.ToInt32(nup_slmon.Value) * getBill() + "";
         }
+
+        private void btn_ttmon_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
