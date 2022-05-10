@@ -34,3 +34,15 @@ D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\TasmaControl.dll
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\TasmaControl.pdb
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.Phieunhap.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.AssemblyReference.cache
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.SuggestedBindingRedirects.cache
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.AccountProfile.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.Admin.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.login.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.Phieunhap.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.Properties.Resources.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.TableManager.resources
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.GenerateResource.cache
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.CoreCompileInputs.cache
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.exe
+D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.pdb
