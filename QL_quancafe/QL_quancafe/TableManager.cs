@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using System.Windows.Forms;
-using Class_QLcafe;
+//using Class_QLcafe;
 
 namespace QL_quancafe
 {
@@ -45,9 +45,9 @@ namespace QL_quancafe
 
         public void active_cbid_food()
         {
-            cb_Category.DataSource = Cls_Food.Select_idfood();
-            cb_Category.ValueMember = "id";
-            cb_Category.DisplayMember = "id";
+            //cb_Category.DataSource = Cls_Food.Select_idfood();
+            //cb_Category.ValueMember = "id";
+            //cb_Category.DisplayMember = "id";
         }
 
         //public void gia()
@@ -58,12 +58,12 @@ namespace QL_quancafe
         //}
         public void active_cb_food()
         {
-            if (cb_Category.Text != "System.Data.DataRowView")
-            {
-                cb_Food.DataSource = Cls_Food.find_Food(cb_Category.Text);
-                cb_Food.ValueMember = "name";
-                cb_Food.DisplayMember = "name";
-            }
+            //if (cb_Category.Text != "System.Data.DataRowView")
+            //{
+            //    cb_Food.DataSource = Cls_Food.find_Food(cb_Category.Text);
+            //    cb_Food.ValueMember = "name";
+            //    cb_Food.DisplayMember = "name";
+            //}
         }
 
         private void TableManager_Load(object sender, EventArgs e)
@@ -84,14 +84,14 @@ namespace QL_quancafe
 
         private void btn_AddFood_Click(object sender, EventArgs e)
         {
-            int soluong = Convert.ToInt16(nmFoodCount.Value);
-            int giathanh = Convert.ToInt32(Cls_Food.find_Food(cb_Category.Text).Rows[0]["price"]);
-            //int giathanh = Convert.ToInt32(DataBindings.Add("text", Cls_Food.Select_food(), "price"));
-            int thanhtien = soluong * giathanh;
-            ListViewItem lvi = new ListViewItem();
-            string[] row = { cb_Food.Text, soluong.ToString() ,giathanh.ToString(), thanhtien.ToString() };
-            var listViewItem = new ListViewItem(row);
-            lsv_Bill.Items.Add(listViewItem);
+            //int soluong = Convert.ToInt16(nmFoodCount.Value);
+            //int giathanh = Convert.ToInt32(Cls_Food.find_Food(cb_Category.Text).Rows[0]["price"]);
+            ////int giathanh = Convert.ToInt32(DataBindings.Add("text", Cls_Food.Select_food(), "price"));
+            //int thanhtien = soluong * giathanh;
+            //ListViewItem lvi = new ListViewItem();
+            //string[] row = { cb_Food.Text, soluong.ToString() ,giathanh.ToString(), thanhtien.ToString() };
+            //var listViewItem = new ListViewItem(row);
+            //lsv_Bill.Items.Add(listViewItem);
         }
     }
 }
