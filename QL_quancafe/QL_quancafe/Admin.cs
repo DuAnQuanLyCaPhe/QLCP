@@ -221,6 +221,17 @@ namespace QL_quancafe
             }
             else return 0;
         }
+        public int checkDupli(string id)
+        {
+            int flag = -1;
+                for (int i = 0; i < dataGV_cmon.RowCount; i++)
+                {
+                    if (id == dataGV_cmon.Rows[i].
+                            Cells["TenDoUong"].Value.ToString().Trim())
+                        flag = i;
+                }
+            return flag;
+        }
         private void btn_datm_Click(object sender, EventArgs e)
         {
             int tongtien = 0;
@@ -230,7 +241,20 @@ namespace QL_quancafe
             DO.Add("DONGIA", txt_giatien.Text);
             DO.Add("SOLUONG", nup_slmon.Value);
             DO.Add("LOAIDOUONG", cb_loaidouong.Text);
-            dataGV_cmon.Rows.Add(DO["TENDOUONG"], DO["LOAIDOUONG"], DO["SOLUONG"], DO["DONGIA"]);
+            if (checkDupli(DO["TENDOUONG"].ToString()) == -1)
+            {
+                dataGV_cmon.Rows.Add(DO["TENDOUONG"],
+                  DO["LOAIDOUONG"], DO["SOLUONG"], DO["DONGIA"]);
+            }
+            else
+            {
+                int pos = checkDupli(DO["TENDOUONG"].ToString());
+                DataGridViewCellCollection data = dataGV_cmon.Rows[pos].Cells;
+                data["SoLuong"].Value = Convert.ToInt32(data["SoLuong"].Value) +
+                    Convert.ToInt32(DO["SOLUONG"]);
+                data["DonGia"].Value = Convert.ToInt32(data["DonGia"].Value) +
+                   Convert.ToInt32(DO["DONGIA"]);
+            }
             for (int i = 0; i < dataGV_cmon.Rows.Count; i++)
             {
                 tongtien += Convert.ToInt32(dataGV_cmon.Rows[i].Cells["DONGIA"].Value);
@@ -258,11 +282,21 @@ namespace QL_quancafe
         private void nup_slmon_ValueChanged(object sender, EventArgs e)
         {
             txt_giatien.Text = Convert.ToInt32(nup_slmon.Value) * getBill() + "";
+            if (nup_slmon.Value > 0)
+            {
+                btn_datm.Enabled = true;
+            }
+            else btn_datm.Enabled = false;
         }
 
         private void btn_ttmon_Click(object sender, EventArgs e)
         {
-
+            if (txt_ttm.Text != "" && nup_tslm.Value > 0)
+            {
+                Bill b = new Bill();
+                b.Show();
+            }
+            else MessageBox.Show("Bạn chưa đặt gì cả");
         }
 
         private void btn_qldu_Click(object sender, EventArgs e)

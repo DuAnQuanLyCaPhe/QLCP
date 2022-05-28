@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MaterialSkin.Controls;
 namespace QL_quancafe
 {
-    public partial class Bill : Form
+    public partial class Bill : MaterialForm
     {
         public Bill()
         {
@@ -19,11 +19,12 @@ namespace QL_quancafe
 
         private void Bill_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'QL_COFFEEDataSet.DOUONG' table. You can move, or remove it, as needed.
-            this.DOUONGTableAdapter.Fill(this.QL_COFFEEDataSet.DOUONG);
+            this.reportV.RefreshReport();
+        }
 
-
-            this.reportViewer1.RefreshReport();
+        private void btn_inhd_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Không có máy in để thực hiện.");
         }
     }
 }

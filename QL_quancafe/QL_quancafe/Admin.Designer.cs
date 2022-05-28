@@ -34,6 +34,14 @@
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.materialCard8 = new MaterialSkin.Controls.MaterialCard();
             this.materialCard9 = new MaterialSkin.Controls.MaterialCard();
+            this.materialCard19 = new MaterialSkin.Controls.MaterialCard();
+            this.btn_huynv = new MaterialSkin.Controls.MaterialButton();
+            this.cb_chucvu = new MaterialSkin.Controls.MaterialComboBox();
+            this.cb_calv = new System.Windows.Forms.ComboBox();
+            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
+            this.dtp_giolv = new System.Windows.Forms.DateTimePicker();
+            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
+            this.txt_manv = new MaterialSkin.Controls.MaterialTextBox2();
             this.dtp_ngaysinh = new System.Windows.Forms.DateTimePicker();
             this.gr_gioitinh = new System.Windows.Forms.GroupBox();
             this.rad_nam = new MaterialSkin.Controls.MaterialRadioButton();
@@ -53,6 +61,13 @@
             this.materialCard15 = new MaterialSkin.Controls.MaterialCard();
             this.btn_themnv = new MaterialSkin.Controls.MaterialButton();
             this.dataGV_NV = new System.Windows.Forms.DataGridView();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioLV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CaLV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.materialCard13 = new MaterialSkin.Controls.MaterialCard();
             this.materialButton18 = new MaterialSkin.Controls.MaterialButton();
@@ -94,10 +109,6 @@
             this.btn_ttmon = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
             this.dataGV_cmon = new System.Windows.Forms.DataGridView();
-            this.TenDoUong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LoaiDoUong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.cardTTTV = new MaterialSkin.Controls.MaterialCard();
@@ -130,24 +141,17 @@
             this.NgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayHetHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
-            this.txt_manv = new MaterialSkin.Controls.MaterialTextBox2();
-            this.dtp_giolv = new System.Windows.Forms.DateTimePicker();
-            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
-            this.cb_calv = new System.Windows.Forms.ComboBox();
-            this.cb_chucvu = new MaterialSkin.Controls.MaterialComboBox();
-            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioLV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CaLV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.materialCard19 = new MaterialSkin.Controls.MaterialCard();
-            this.btn_huynv = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel19 = new MaterialSkin.Controls.MaterialLabel();
+            this.check_thetv = new MaterialSkin.Controls.MaterialCheckbox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TenDoUong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoaiDoUong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage6.SuspendLayout();
             this.materialCard8.SuspendLayout();
             this.materialCard9.SuspendLayout();
+            this.materialCard19.SuspendLayout();
             this.gr_gioitinh.SuspendLayout();
             this.materialCard10.SuspendLayout();
             this.materialCard11.SuspendLayout();
@@ -184,7 +188,6 @@
             this.materialCard2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_TV)).BeginInit();
             this.materialTabControl1.SuspendLayout();
-            this.materialCard19.SuspendLayout();
             this.SuspendLayout();
             // 
             // imageList1
@@ -258,6 +261,143 @@
             this.materialCard9.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard9.Size = new System.Drawing.Size(436, 447);
             this.materialCard9.TabIndex = 10;
+            // 
+            // materialCard19
+            // 
+            this.materialCard19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard19.Controls.Add(this.btn_huynv);
+            this.materialCard19.Depth = 0;
+            this.materialCard19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard19.Location = new System.Drawing.Point(318, 381);
+            this.materialCard19.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCard19.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard19.Name = "materialCard19";
+            this.materialCard19.Padding = new System.Windows.Forms.Padding(5);
+            this.materialCard19.Size = new System.Drawing.Size(64, 52);
+            this.materialCard19.TabIndex = 43;
+            // 
+            // btn_huynv
+            // 
+            this.btn_huynv.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_huynv.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_huynv.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_huynv.Depth = 0;
+            this.btn_huynv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_huynv.HighEmphasis = true;
+            this.btn_huynv.Icon = null;
+            this.btn_huynv.Location = new System.Drawing.Point(5, 5);
+            this.btn_huynv.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btn_huynv.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_huynv.Name = "btn_huynv";
+            this.btn_huynv.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_huynv.Size = new System.Drawing.Size(54, 42);
+            this.btn_huynv.TabIndex = 2;
+            this.btn_huynv.Text = "Hủy";
+            this.btn_huynv.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_huynv.UseAccentColor = false;
+            this.btn_huynv.UseVisualStyleBackColor = true;
+            this.btn_huynv.Visible = false;
+            this.btn_huynv.Click += new System.EventHandler(this.btn_huynv_Click);
+            // 
+            // cb_chucvu
+            // 
+            this.cb_chucvu.AutoResize = false;
+            this.cb_chucvu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cb_chucvu.Depth = 0;
+            this.cb_chucvu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cb_chucvu.DropDownHeight = 174;
+            this.cb_chucvu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_chucvu.DropDownWidth = 121;
+            this.cb_chucvu.Enabled = false;
+            this.cb_chucvu.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cb_chucvu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cb_chucvu.FormattingEnabled = true;
+            this.cb_chucvu.IntegralHeight = false;
+            this.cb_chucvu.ItemHeight = 43;
+            this.cb_chucvu.Location = new System.Drawing.Point(133, 229);
+            this.cb_chucvu.MaxDropDownItems = 4;
+            this.cb_chucvu.MouseState = MaterialSkin.MouseState.OUT;
+            this.cb_chucvu.Name = "cb_chucvu";
+            this.cb_chucvu.Size = new System.Drawing.Size(249, 49);
+            this.cb_chucvu.StartIndex = 0;
+            this.cb_chucvu.TabIndex = 42;
+            // 
+            // cb_calv
+            // 
+            this.cb_calv.Enabled = false;
+            this.cb_calv.FormattingEnabled = true;
+            this.cb_calv.Items.AddRange(new object[] {
+            "Sáng",
+            "Chiều",
+            "Tối"});
+            this.cb_calv.Location = new System.Drawing.Point(133, 339);
+            this.cb_calv.Name = "cb_calv";
+            this.cb_calv.Size = new System.Drawing.Size(244, 21);
+            this.cb_calv.TabIndex = 41;
+            this.cb_calv.SelectedIndexChanged += new System.EventHandler(this.cb_calv_SelectedIndexChanged);
+            this.cb_calv.TextChanged += new System.EventHandler(this.cb_calv_TextChanged);
+            // 
+            // materialLabel17
+            // 
+            this.materialLabel17.AutoSize = true;
+            this.materialLabel17.Depth = 0;
+            this.materialLabel17.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel17.Location = new System.Drawing.Point(18, 341);
+            this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel17.Name = "materialLabel17";
+            this.materialLabel17.Size = new System.Drawing.Size(90, 19);
+            this.materialLabel17.TabIndex = 40;
+            this.materialLabel17.Text = "Ca Làm Việc";
+            // 
+            // dtp_giolv
+            // 
+            this.dtp_giolv.Enabled = false;
+            this.dtp_giolv.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtp_giolv.Location = new System.Drawing.Point(133, 299);
+            this.dtp_giolv.Name = "dtp_giolv";
+            this.dtp_giolv.Size = new System.Drawing.Size(244, 20);
+            this.dtp_giolv.TabIndex = 39;
+            // 
+            // materialLabel13
+            // 
+            this.materialLabel13.AutoSize = true;
+            this.materialLabel13.Depth = 0;
+            this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel13.Location = new System.Drawing.Point(18, 300);
+            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel13.Name = "materialLabel13";
+            this.materialLabel13.Size = new System.Drawing.Size(95, 19);
+            this.materialLabel13.TabIndex = 38;
+            this.materialLabel13.Text = "Giờ Làm Việc";
+            // 
+            // txt_manv
+            // 
+            this.txt_manv.AnimateReadOnly = false;
+            this.txt_manv.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txt_manv.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_manv.Depth = 0;
+            this.txt_manv.Enabled = false;
+            this.txt_manv.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_manv.HideSelection = true;
+            this.txt_manv.LeadingIcon = null;
+            this.txt_manv.Location = new System.Drawing.Point(136, 14);
+            this.txt_manv.MaxLength = 32767;
+            this.txt_manv.MouseState = MaterialSkin.MouseState.OUT;
+            this.txt_manv.Name = "txt_manv";
+            this.txt_manv.PasswordChar = '\0';
+            this.txt_manv.PrefixSuffixText = null;
+            this.txt_manv.ReadOnly = false;
+            this.txt_manv.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_manv.SelectedText = "";
+            this.txt_manv.SelectionLength = 0;
+            this.txt_manv.SelectionStart = 0;
+            this.txt_manv.ShortcutsEnabled = true;
+            this.txt_manv.Size = new System.Drawing.Size(244, 48);
+            this.txt_manv.TabIndex = 37;
+            this.txt_manv.TabStop = false;
+            this.txt_manv.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_manv.TrailingIcon = null;
+            this.txt_manv.UseSystemPasswordChar = false;
             // 
             // dtp_ngaysinh
             // 
@@ -567,6 +707,55 @@
             this.dataGV_NV.Size = new System.Drawing.Size(478, 405);
             this.dataGV_NV.TabIndex = 6;
             this.dataGV_NV.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGV_NV_CellEnter);
+            // 
+            // MaNV
+            // 
+            this.MaNV.DataPropertyName = "MaNV";
+            this.MaNV.HeaderText = "Mã Nhân Viên";
+            this.MaNV.Name = "MaNV";
+            this.MaNV.ReadOnly = true;
+            // 
+            // TenNV
+            // 
+            this.TenNV.DataPropertyName = "TenNV";
+            this.TenNV.HeaderText = "Tên Nhân Viên";
+            this.TenNV.Name = "TenNV";
+            this.TenNV.ReadOnly = true;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "GioiT";
+            this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.ReadOnly = true;
+            // 
+            // NgaySinh
+            // 
+            this.NgaySinh.DataPropertyName = "NgaySinh";
+            this.NgaySinh.HeaderText = "Ngày Sinh";
+            this.NgaySinh.Name = "NgaySinh";
+            this.NgaySinh.ReadOnly = true;
+            // 
+            // ChucVu
+            // 
+            this.ChucVu.DataPropertyName = "TenCV";
+            this.ChucVu.HeaderText = "Chức Vụ";
+            this.ChucVu.Name = "ChucVu";
+            this.ChucVu.ReadOnly = true;
+            // 
+            // GioLV
+            // 
+            this.GioLV.DataPropertyName = "GioLV";
+            this.GioLV.HeaderText = "Giờ Làm Việc";
+            this.GioLV.Name = "GioLV";
+            this.GioLV.ReadOnly = true;
+            // 
+            // CaLV
+            // 
+            this.CaLV.DataPropertyName = "CaLV";
+            this.CaLV.HeaderText = "Ca Làm Việc";
+            this.CaLV.Name = "CaLV";
+            this.CaLV.ReadOnly = true;
             // 
             // tabPage4
             // 
@@ -970,6 +1159,9 @@
             // cardManager
             // 
             this.cardManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cardManager.Controls.Add(this.textBox1);
+            this.cardManager.Controls.Add(this.check_thetv);
+            this.cardManager.Controls.Add(this.materialLabel19);
             this.cardManager.Controls.Add(this.txt_giatien);
             this.cardManager.Controls.Add(this.materialLabel5);
             this.cardManager.Controls.Add(this.groupBox2);
@@ -1026,9 +1218,9 @@
             this.groupBox2.Controls.Add(this.nup_tslm);
             this.groupBox2.Controls.Add(this.txt_ttm);
             this.groupBox2.Controls.Add(this.materialLabel12);
-            this.groupBox2.Location = new System.Drawing.Point(17, 263);
+            this.groupBox2.Location = new System.Drawing.Point(15, 279);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(363, 116);
+            this.groupBox2.Size = new System.Drawing.Size(363, 106);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             // 
@@ -1162,6 +1354,7 @@
             this.btn_datm.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btn_datm.Depth = 0;
             this.btn_datm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_datm.Enabled = false;
             this.btn_datm.HighEmphasis = true;
             this.btn_datm.Icon = null;
             this.btn_datm.Location = new System.Drawing.Point(5, 5);
@@ -1248,33 +1441,6 @@
             this.dataGV_cmon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGV_cmon.Size = new System.Drawing.Size(478, 405);
             this.dataGV_cmon.TabIndex = 6;
-            // 
-            // TenDoUong
-            // 
-            this.TenDoUong.DataPropertyName = "TENDOUONG";
-            this.TenDoUong.HeaderText = "Tên Món";
-            this.TenDoUong.Name = "TenDoUong";
-            this.TenDoUong.ReadOnly = true;
-            // 
-            // LoaiDoUong
-            // 
-            this.LoaiDoUong.DataPropertyName = "LOAIDOUONG";
-            this.LoaiDoUong.HeaderText = "Loại Món";
-            this.LoaiDoUong.Name = "LoaiDoUong";
-            this.LoaiDoUong.ReadOnly = true;
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.HeaderText = "Số Lượng";
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.ReadOnly = true;
-            // 
-            // DonGia
-            // 
-            this.DonGia.DataPropertyName = "DonGia";
-            this.DonGia.HeaderText = "Đơn Giá";
-            this.DonGia.Name = "DonGia";
-            this.DonGia.ReadOnly = true;
             // 
             // tabPage2
             // 
@@ -1753,191 +1919,67 @@
             this.materialTabControl1.Size = new System.Drawing.Size(946, 517);
             this.materialTabControl1.TabIndex = 0;
             // 
-            // txt_manv
+            // materialLabel19
             // 
-            this.txt_manv.AnimateReadOnly = false;
-            this.txt_manv.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txt_manv.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_manv.Depth = 0;
-            this.txt_manv.Enabled = false;
-            this.txt_manv.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txt_manv.HideSelection = true;
-            this.txt_manv.LeadingIcon = null;
-            this.txt_manv.Location = new System.Drawing.Point(136, 14);
-            this.txt_manv.MaxLength = 32767;
-            this.txt_manv.MouseState = MaterialSkin.MouseState.OUT;
-            this.txt_manv.Name = "txt_manv";
-            this.txt_manv.PasswordChar = '\0';
-            this.txt_manv.PrefixSuffixText = null;
-            this.txt_manv.ReadOnly = false;
-            this.txt_manv.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txt_manv.SelectedText = "";
-            this.txt_manv.SelectionLength = 0;
-            this.txt_manv.SelectionStart = 0;
-            this.txt_manv.ShortcutsEnabled = true;
-            this.txt_manv.Size = new System.Drawing.Size(244, 48);
-            this.txt_manv.TabIndex = 37;
-            this.txt_manv.TabStop = false;
-            this.txt_manv.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_manv.TrailingIcon = null;
-            this.txt_manv.UseSystemPasswordChar = false;
+            this.materialLabel19.AutoSize = true;
+            this.materialLabel19.Depth = 0;
+            this.materialLabel19.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel19.Location = new System.Drawing.Point(17, 248);
+            this.materialLabel19.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel19.Name = "materialLabel19";
+            this.materialLabel19.Size = new System.Drawing.Size(113, 19);
+            this.materialLabel19.TabIndex = 26;
+            this.materialLabel19.Text = "Thẻ Thành Viên";
             // 
-            // dtp_giolv
+            // check_thetv
             // 
-            this.dtp_giolv.Enabled = false;
-            this.dtp_giolv.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtp_giolv.Location = new System.Drawing.Point(133, 299);
-            this.dtp_giolv.Name = "dtp_giolv";
-            this.dtp_giolv.Size = new System.Drawing.Size(244, 20);
-            this.dtp_giolv.TabIndex = 39;
+            this.check_thetv.AutoSize = true;
+            this.check_thetv.Depth = 0;
+            this.check_thetv.Location = new System.Drawing.Point(133, 239);
+            this.check_thetv.Margin = new System.Windows.Forms.Padding(0);
+            this.check_thetv.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.check_thetv.MouseState = MaterialSkin.MouseState.HOVER;
+            this.check_thetv.Name = "check_thetv";
+            this.check_thetv.ReadOnly = false;
+            this.check_thetv.Ripple = true;
+            this.check_thetv.Size = new System.Drawing.Size(35, 37);
+            this.check_thetv.TabIndex = 27;
+            this.check_thetv.UseVisualStyleBackColor = true;
             // 
-            // materialLabel13
+            // textBox1
             // 
-            this.materialLabel13.AutoSize = true;
-            this.materialLabel13.Depth = 0;
-            this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel13.Location = new System.Drawing.Point(18, 300);
-            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel13.Name = "materialLabel13";
-            this.materialLabel13.Size = new System.Drawing.Size(95, 19);
-            this.materialLabel13.TabIndex = 38;
-            this.materialLabel13.Text = "Giờ Làm Việc";
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(182, 248);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(193, 20);
+            this.textBox1.TabIndex = 28;
             // 
-            // materialLabel17
+            // TenDoUong
             // 
-            this.materialLabel17.AutoSize = true;
-            this.materialLabel17.Depth = 0;
-            this.materialLabel17.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel17.Location = new System.Drawing.Point(18, 341);
-            this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel17.Name = "materialLabel17";
-            this.materialLabel17.Size = new System.Drawing.Size(90, 19);
-            this.materialLabel17.TabIndex = 40;
-            this.materialLabel17.Text = "Ca Làm Việc";
+            this.TenDoUong.DataPropertyName = "TENDOUONG";
+            this.TenDoUong.HeaderText = "Tên Đồ Uống";
+            this.TenDoUong.Name = "TenDoUong";
+            this.TenDoUong.ReadOnly = true;
             // 
-            // cb_calv
+            // LoaiDoUong
             // 
-            this.cb_calv.Enabled = false;
-            this.cb_calv.FormattingEnabled = true;
-            this.cb_calv.Items.AddRange(new object[] {
-            "Sáng",
-            "Chiều",
-            "Tối"});
-            this.cb_calv.Location = new System.Drawing.Point(133, 339);
-            this.cb_calv.Name = "cb_calv";
-            this.cb_calv.Size = new System.Drawing.Size(244, 21);
-            this.cb_calv.TabIndex = 41;
-            this.cb_calv.SelectedIndexChanged += new System.EventHandler(this.cb_calv_SelectedIndexChanged);
-            this.cb_calv.TextChanged += new System.EventHandler(this.cb_calv_TextChanged);
+            this.LoaiDoUong.DataPropertyName = "LOAIDOUONG";
+            this.LoaiDoUong.HeaderText = "Loại Đồ Uống";
+            this.LoaiDoUong.Name = "LoaiDoUong";
+            this.LoaiDoUong.ReadOnly = true;
             // 
-            // cb_chucvu
+            // SoLuong
             // 
-            this.cb_chucvu.AutoResize = false;
-            this.cb_chucvu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cb_chucvu.Depth = 0;
-            this.cb_chucvu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cb_chucvu.DropDownHeight = 174;
-            this.cb_chucvu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_chucvu.DropDownWidth = 121;
-            this.cb_chucvu.Enabled = false;
-            this.cb_chucvu.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cb_chucvu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cb_chucvu.FormattingEnabled = true;
-            this.cb_chucvu.IntegralHeight = false;
-            this.cb_chucvu.ItemHeight = 43;
-            this.cb_chucvu.Location = new System.Drawing.Point(133, 229);
-            this.cb_chucvu.MaxDropDownItems = 4;
-            this.cb_chucvu.MouseState = MaterialSkin.MouseState.OUT;
-            this.cb_chucvu.Name = "cb_chucvu";
-            this.cb_chucvu.Size = new System.Drawing.Size(249, 49);
-            this.cb_chucvu.StartIndex = 0;
-            this.cb_chucvu.TabIndex = 42;
+            this.SoLuong.HeaderText = "Số Lượng";
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.ReadOnly = true;
             // 
-            // MaNV
+            // DonGia
             // 
-            this.MaNV.DataPropertyName = "MaNV";
-            this.MaNV.HeaderText = "Mã Nhân Viên";
-            this.MaNV.Name = "MaNV";
-            this.MaNV.ReadOnly = true;
-            // 
-            // TenNV
-            // 
-            this.TenNV.DataPropertyName = "TenNV";
-            this.TenNV.HeaderText = "Tên Nhân Viên";
-            this.TenNV.Name = "TenNV";
-            this.TenNV.ReadOnly = true;
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.DataPropertyName = "GioiT";
-            this.GioiTinh.HeaderText = "Giới Tính";
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.ReadOnly = true;
-            // 
-            // NgaySinh
-            // 
-            this.NgaySinh.DataPropertyName = "NgaySinh";
-            this.NgaySinh.HeaderText = "Ngày Sinh";
-            this.NgaySinh.Name = "NgaySinh";
-            this.NgaySinh.ReadOnly = true;
-            // 
-            // ChucVu
-            // 
-            this.ChucVu.DataPropertyName = "TenCV";
-            this.ChucVu.HeaderText = "Chức Vụ";
-            this.ChucVu.Name = "ChucVu";
-            this.ChucVu.ReadOnly = true;
-            // 
-            // GioLV
-            // 
-            this.GioLV.DataPropertyName = "GioLV";
-            this.GioLV.HeaderText = "Giờ Làm Việc";
-            this.GioLV.Name = "GioLV";
-            this.GioLV.ReadOnly = true;
-            // 
-            // CaLV
-            // 
-            this.CaLV.DataPropertyName = "CaLV";
-            this.CaLV.HeaderText = "Ca Làm Việc";
-            this.CaLV.Name = "CaLV";
-            this.CaLV.ReadOnly = true;
-            // 
-            // materialCard19
-            // 
-            this.materialCard19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard19.Controls.Add(this.btn_huynv);
-            this.materialCard19.Depth = 0;
-            this.materialCard19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard19.Location = new System.Drawing.Point(318, 381);
-            this.materialCard19.Margin = new System.Windows.Forms.Padding(0);
-            this.materialCard19.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard19.Name = "materialCard19";
-            this.materialCard19.Padding = new System.Windows.Forms.Padding(5);
-            this.materialCard19.Size = new System.Drawing.Size(64, 52);
-            this.materialCard19.TabIndex = 43;
-            // 
-            // btn_huynv
-            // 
-            this.btn_huynv.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_huynv.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_huynv.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btn_huynv.Depth = 0;
-            this.btn_huynv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_huynv.HighEmphasis = true;
-            this.btn_huynv.Icon = null;
-            this.btn_huynv.Location = new System.Drawing.Point(5, 5);
-            this.btn_huynv.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btn_huynv.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btn_huynv.Name = "btn_huynv";
-            this.btn_huynv.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn_huynv.Size = new System.Drawing.Size(54, 42);
-            this.btn_huynv.TabIndex = 2;
-            this.btn_huynv.Text = "Hủy";
-            this.btn_huynv.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btn_huynv.UseAccentColor = false;
-            this.btn_huynv.UseVisualStyleBackColor = true;
-            this.btn_huynv.Visible = false;
-            this.btn_huynv.Click += new System.EventHandler(this.btn_huynv_Click);
+            this.DonGia.DataPropertyName = "DonGia";
+            this.DonGia.HeaderText = "Đơn Giá";
+            this.DonGia.Name = "DonGia";
+            this.DonGia.ReadOnly = true;
             // 
             // Admin
             // 
@@ -1957,6 +1999,8 @@
             this.materialCard8.ResumeLayout(false);
             this.materialCard9.ResumeLayout(false);
             this.materialCard9.PerformLayout();
+            this.materialCard19.ResumeLayout(false);
+            this.materialCard19.PerformLayout();
             this.gr_gioitinh.ResumeLayout(false);
             this.gr_gioitinh.PerformLayout();
             this.materialCard10.ResumeLayout(false);
@@ -2016,8 +2060,6 @@
             this.materialCard2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_TV)).EndInit();
             this.materialTabControl1.ResumeLayout(false);
-            this.materialCard19.ResumeLayout(false);
-            this.materialCard19.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2109,10 +2151,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialCard materialCard16;
         private MaterialSkin.Controls.MaterialButton btn_qldu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenDoUong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LoaiDoUong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaThanhVien;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenThanhVien;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiemTichLuy;
@@ -2138,5 +2176,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CaLV;
         private MaterialSkin.Controls.MaterialCard materialCard19;
         private MaterialSkin.Controls.MaterialButton btn_huynv;
+        private MaterialSkin.Controls.MaterialCheckbox check_thetv;
+        private MaterialSkin.Controls.MaterialLabel materialLabel19;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenDoUong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LoaiDoUong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
     }
 }

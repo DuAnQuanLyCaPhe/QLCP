@@ -30,8 +30,8 @@
         {
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.txt_password = new MaterialSkin.Controls.MaterialTextBox();
-            this.txt_user = new MaterialSkin.Controls.MaterialTextBox();
+            this.txt_mk = new MaterialSkin.Controls.MaterialTextBox();
+            this.txt_tentk = new MaterialSkin.Controls.MaterialTextBox();
             this.btn_thoat = new MaterialSkin.Controls.MaterialButton();
             this.btn_login = new MaterialSkin.Controls.MaterialButton();
             this.SuspendLayout();
@@ -60,41 +60,42 @@
             this.materialLabel1.TabIndex = 24;
             this.materialLabel1.Text = "Tên Tài Khoản";
             // 
-            // txt_password
+            // txt_mk
             // 
-            this.txt_password.AnimateReadOnly = false;
-            this.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_password.Depth = 0;
-            this.txt_password.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txt_password.LeadingIcon = null;
-            this.txt_password.Location = new System.Drawing.Point(30, 209);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_password.MaxLength = 50;
-            this.txt_password.MouseState = MaterialSkin.MouseState.OUT;
-            this.txt_password.Multiline = false;
-            this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(387, 50);
-            this.txt_password.TabIndex = 23;
-            this.txt_password.Text = "";
-            this.txt_password.TrailingIcon = null;
+            this.txt_mk.AnimateReadOnly = false;
+            this.txt_mk.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_mk.Depth = 0;
+            this.txt_mk.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_mk.LeadingIcon = null;
+            this.txt_mk.Location = new System.Drawing.Point(30, 209);
+            this.txt_mk.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_mk.MaxLength = 50;
+            this.txt_mk.MouseState = MaterialSkin.MouseState.OUT;
+            this.txt_mk.Multiline = false;
+            this.txt_mk.Name = "txt_mk";
+            this.txt_mk.Password = true;
+            this.txt_mk.Size = new System.Drawing.Size(387, 50);
+            this.txt_mk.TabIndex = 23;
+            this.txt_mk.Text = "";
+            this.txt_mk.TrailingIcon = null;
             // 
-            // txt_user
+            // txt_tentk
             // 
-            this.txt_user.AnimateReadOnly = false;
-            this.txt_user.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_user.Depth = 0;
-            this.txt_user.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txt_user.LeadingIcon = null;
-            this.txt_user.Location = new System.Drawing.Point(28, 112);
-            this.txt_user.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_user.MaxLength = 50;
-            this.txt_user.MouseState = MaterialSkin.MouseState.OUT;
-            this.txt_user.Multiline = false;
-            this.txt_user.Name = "txt_user";
-            this.txt_user.Size = new System.Drawing.Size(387, 50);
-            this.txt_user.TabIndex = 22;
-            this.txt_user.Text = "";
-            this.txt_user.TrailingIcon = null;
+            this.txt_tentk.AnimateReadOnly = false;
+            this.txt_tentk.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_tentk.Depth = 0;
+            this.txt_tentk.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_tentk.LeadingIcon = null;
+            this.txt_tentk.Location = new System.Drawing.Point(28, 112);
+            this.txt_tentk.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_tentk.MaxLength = 50;
+            this.txt_tentk.MouseState = MaterialSkin.MouseState.OUT;
+            this.txt_tentk.Multiline = false;
+            this.txt_tentk.Name = "txt_tentk";
+            this.txt_tentk.Size = new System.Drawing.Size(387, 50);
+            this.txt_tentk.TabIndex = 22;
+            this.txt_tentk.Text = "";
+            this.txt_tentk.TrailingIcon = null;
             // 
             // btn_thoat
             // 
@@ -115,6 +116,7 @@
             this.btn_thoat.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_thoat.UseAccentColor = false;
             this.btn_thoat.UseVisualStyleBackColor = true;
+            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
             // btn_login
             // 
@@ -135,6 +137,7 @@
             this.btn_login.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_login.UseAccentColor = false;
             this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // login
             // 
@@ -143,8 +146,8 @@
             this.ClientSize = new System.Drawing.Size(451, 339);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialLabel1);
-            this.Controls.Add(this.txt_password);
-            this.Controls.Add(this.txt_user);
+            this.Controls.Add(this.txt_mk);
+            this.Controls.Add(this.txt_tentk);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.btn_login);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -161,8 +164,8 @@
 
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialTextBox txt_password;
-        private MaterialSkin.Controls.MaterialTextBox txt_user;
+        private MaterialSkin.Controls.MaterialTextBox txt_mk;
+        private MaterialSkin.Controls.MaterialTextBox txt_tentk;
         private MaterialSkin.Controls.MaterialButton btn_thoat;
         private MaterialSkin.Controls.MaterialButton btn_login;
     }

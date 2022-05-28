@@ -106,5 +106,3 @@ D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\RdlCompile.cache
-D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\RdlCompile.compiled
