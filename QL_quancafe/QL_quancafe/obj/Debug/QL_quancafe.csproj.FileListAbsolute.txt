@@ -46,3 +46,4 @@ D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quanca
 D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.CoreCompileInputs.cache
 D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.exe
 D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.pdb
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.QLDU.resources

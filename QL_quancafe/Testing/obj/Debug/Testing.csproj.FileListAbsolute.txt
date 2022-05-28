@@ -1,0 +1,10 @@
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Testing\bin\Debug\Testing.exe.config
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Testing\bin\Debug\Testing.exe
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Testing\bin\Debug\Testing.pdb
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Testing\bin\Debug\TasmaControl.dll
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Testing\bin\Debug\TasmaControl.pdb
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Testing\obj\Debug\Testing.csproj.AssemblyReference.cache
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Testing\obj\Debug\Testing.csproj.CoreCompileInputs.cache
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Testing\obj\Debug\Testing.csproj.CopyComplete
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Testing\obj\Debug\Testing.exe
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\Testing\obj\Debug\Testing.pdb

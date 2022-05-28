@@ -15,7 +15,6 @@ namespace QL_quancafe
 {
     public partial class Admin : MaterialForm
     {
-        SqlConnection kn = TasmaMain.ketnoi(@"DESKTOP-MC\SQLEXPRESS", "QL_COFFEE");
         readonly MaterialSkin.MaterialSkinManager materialSkin;
         public Admin()
         {
@@ -28,13 +27,14 @@ namespace QL_quancafe
                 MaterialSkin.Primary.BlueGrey900, MaterialSkin.Primary.BlueGrey500,
                 MaterialSkin.Accent.Red400, MaterialSkin.TextShade.WHITE);
         }
-        // Phần Sử Dụng Chung
-        // ==========================================================
+        // ===========================================================
+        // Phần Thẻ Thành Viên
+        // ===========================================================
         public void clearText()
         {
             txt_maTV.Text = "";
             txt_tenTV.Text = "";
-            nup_diemtl.Value = 0;
+            txt_diemtl.Text = "0";
             nup_slmh.Value = 0;
             txt_dgg.Text = "0%";
         }
@@ -42,31 +42,73 @@ namespace QL_quancafe
         {
             txt_tenTV.Enabled = check;
             nup_slmh.Enabled = check;
+            txt_diemtl.Enabled = check;
         }
-        // ===========================================================
-        // Phần Thẻ Thành Viên
-        // ===========================================================
+        public void XoaHD_ThanhVien()
+        {
+            DataTable hd = TasmaMain.LietKeDuLieu("HOADON", "MaTV", txt_maTV.Text.Trim(), TasmaMain.kn);
+            for (int i = 0; i < hd.Rows.Count; i++)
+            {
+                TasmaMain.XoaDuLieu("CTHD", "MaHoaDon",
+                    hd.Rows[i]["MaHoaDon"].ToString().Trim(), TasmaMain.kn);
+                DataTable tk = TasmaMain.LietKeDuLieu("CTTK", "MAHOADON",
+                    hd.Rows[i]["MaHoaDon"].ToString().Trim(), TasmaMain.kn);
+                for (int j = 0; j < tk.Rows.Count; j++)
+                {
+                    TasmaMain.XoaDuLieu("CTTK", "MaHoaDon", tk.Rows[j]["MaHoaDon"], TasmaMain.kn);
+                }
+            }
+            TasmaMain.XoaDuLieu("HOADON", "MaTV", txt_maTV.Text.Trim(), TasmaMain.kn);
+        }
         public void DataGV_ThanhVien()
         {
-            DataTable dt = TasmaMain.LietKeDuLieu("THANHVIEN", kn);
+            DataTable dt = TasmaMain.LietKeDuLieu("THANHVIEN", TasmaMain.kn);
             dataGV_TV.DataSource = dt;
-            Infor_ThanhVien();
+            currentChoice();
         }
         public void Infor_ThanhVien()
         {
-            DataTable dt = TasmaMain.LietKeDuLieu("THANHVIEN", "MaTV", dataGV_TV.CurrentRow.Cells[0].Value,
-              kn);
-            txt_maTV.DataBindings.Clear();
-            txt_tenTV.DataBindings.Clear();
-            nup_diemtl.DataBindings.Clear();
-            nup_slmh.DataBindings.Clear();
-            txt_dgg.DataBindings.Clear();
-            txt_maTV.DataBindings.Add("Text", dt, "MaTV");
-            txt_tenTV.DataBindings.Add("Text", dt, "TenTV");
-            nup_diemtl.DataBindings.Add("Value", dt, "DiemTichLuy");
-            nup_slmh.DataBindings.Add("Value", dt, "SoLanMuaHang");
-            txt_dgg.DataBindings.Add("Text", dt, "DiemGiamGia");
-            txt_dgg.Text += "%";
+            if(dataGV_TV.Rows.Count > 0)
+            {
+                DataTable dt = TasmaMain.LietKeDuLieu("THANHVIEN", "MaTV", dataGV_TV.CurrentRow.Cells[0].Value,
+                TasmaMain.kn);
+                txt_maTV.DataBindings.Clear();
+                txt_tenTV.DataBindings.Clear();
+                txt_diemtl.DataBindings.Clear();
+                nup_slmh.DataBindings.Clear();
+                txt_dgg.DataBindings.Clear();
+                txt_maTV.DataBindings.Add("Text", dt, "MaTV");
+                txt_tenTV.DataBindings.Add("Text", dt, "TenTV");
+                txt_diemtl.DataBindings.Add("Text", dt, "DiemTichLuy");
+                nup_slmh.DataBindings.Add("Value", dt, "SoLanMuaHang");
+                txt_dgg.DataBindings.Add("Text", dt, "DiemGiamGia");
+                txt_dgg.Text += "%";
+            }
+        }
+        public void unableButn(bool check)
+        {
+            btn_them_tv.Enabled = check;
+            btn_sua_tv.Enabled = check;
+            btn_xoa_tv.Enabled = check;
+            dataGV_TV.Enabled = check;
+        }
+        public void visibleButn(bool check)
+        {
+            btn_luu.Visible = check;
+            btn_huy.Visible = check;
+        }
+        public void currentChoice()
+        {
+            if(dataGV_TV.Rows.Count > 0)
+            {
+                Infor_ThanhVien();
+                btn_sua_tv.Enabled = true;
+                btn_xoa_tv.Enabled = true;
+            } else
+            {
+                btn_sua_tv.Enabled = false;
+                btn_xoa_tv.Enabled = false;
+            }
         }
         private void dataGV_TV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -77,25 +119,27 @@ namespace QL_quancafe
         }
         private void nup_slmh_ValueChanged(object sender, EventArgs e)
         {
-            nup_diemtl.Value = nup_slmh.Value * 10;
-            txt_dgg.Text = nup_diemtl.Value / 100 + "%";
+            //txt_diemtl.Text = nup_slmh.Value * 10 + "";
+            //txt_dgg.Text = Convert.ToInt32(txt_diemtl.Text) / 100 + "%";
         }
         private void btn_them_tv_Click(object sender, EventArgs e)
         {
+            DataTable TV = TasmaMain.LietKeTuDo(
+                "SELECT TOP 1 MaTV FROM THANHVIEN ORDER BY MaTV DESC", TasmaMain.kn);
             clearText();
             btn_luu.Text = "Thêm";
             unableText(true);
-            string idst = TasmaMain.LietKeTuDo(
-                "SELECT TOP 1 MaTV FROM THANHVIEN ORDER BY MaTV DESC", kn).Rows[0]["MaTV"].ToString();
-
+            visibleButn(true);
+            unableButn(false);
+            string idst = (TV.Rows.Count > 0) ? TV.Rows[0]["MaTV"].ToString() : "TV000";
             txt_maTV.Text = TasmaMain.IDSinhTruong(idst.Trim());
-            btn_luu.Visible = true;
         }
         private void btn_sua_tv_Click(object sender, EventArgs e)
         {
             btn_luu.Text = "Lưu";
+            visibleButn(true);
             unableText(true);
-            btn_luu.Visible = true;
+            unableButn(false);
         }
         private void btn_xoa_tv_Click(object sender, EventArgs e)
         {
@@ -104,11 +148,13 @@ namespace QL_quancafe
                 "Xóa Thành Viên", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
+                XoaHD_ThanhVien();
                 string mess = (TasmaMain.XoaDuLieu("THANHVIEN", "MaTV",
-                    dataGV_TV.CurrentRow.Cells[0].Value, kn)) ?
+                    dataGV_TV.CurrentRow.Cells[0].Value, TasmaMain.kn)) ?
                     "Đã Xóa Thành Công " + txt_tenTV.Text : "Có Lỗi Xảy Ra Khi Xóa";
                 MessageBox.Show(mess);
                 DataGV_ThanhVien();
+                clearText();
             }
             else if (dialogResult == DialogResult.No)
             {
@@ -122,12 +168,12 @@ namespace QL_quancafe
                 Dictionary<string, object> dl = new Dictionary<string, object>();
                 dl.Add("MaTV", txt_maTV.Text);
                 dl.Add("TenTV", txt_tenTV.Text);
-                dl.Add("DiemTichLuy", nup_diemtl.Value);
+                dl.Add("DiemTichLuy", txt_diemtl.Text);
                 dl.Add("SoLanMuaHang", nup_slmh.Value);
                 dl.Add("DiemGiamGia", txt_dgg.Text.Substring(0, txt_dgg.Text.Length - 1));
                 if (btn_luu.Text == "Thêm")
                 {
-                    if (TasmaMain.ThemDuLieu("THANHVIEN", dl, kn))
+                    if (TasmaMain.ThemDuLieu("THANHVIEN", dl, TasmaMain.kn))
                         MessageBox.Show("Đã Thêm Thành Công Thành Viên " + txt_tenTV.Text);
                     else MessageBox.Show("Đã có lỗi xảy ra trong quá trình thêm");
                     clearText();
@@ -136,7 +182,7 @@ namespace QL_quancafe
                 }
                 else
                 {
-                    if (TasmaMain.SuaDuLieu("THANHVIEN", dl, "MaTV", txt_maTV.Text, kn))
+                    if (TasmaMain.SuaDuLieu("THANHVIEN", dl, "MaTV", txt_maTV.Text, TasmaMain.kn))
                     {
                         MessageBox.Show("Đã Sửa Thành Công Thông Tin Của " + txt_tenTV.Text);
                     }
@@ -146,56 +192,46 @@ namespace QL_quancafe
                 }
             }
             else MessageBox.Show("Vui Lòng Nhập Tên Thành Viên");
-            btn_luu.Visible = false;
+            visibleButn(false);
+            unableButn(true);
         }
         //======================================================
         // Phần Món
         public void CB_LOAIMON()
         {
-            DataTable dt = TasmaMain.LietKeDuLieu("LOAIMON", kn);
-            cb_loaimon.DataSource = dt;
-            cb_loaimon.DisplayMember = "TENLOAIMON";
-            cb_loaimon.ValueMember = "MALOAIMON";
+            DataTable dt = TasmaMain.LietKeDuLieu("LOAIDOUONG", TasmaMain.kn);
+            cb_loaidouong.DataSource = dt;
+            cb_loaidouong.DisplayMember = "TENLOAIDOUONG";
+            cb_loaidouong.ValueMember = "MALOAIDOUONG";
             CB_MON();
         }
         public void CB_MON()
         {
-            DataTable dt = TasmaMain.LietKeDuLieu("MON", "MaLoaiMon", cb_loaimon.SelectedValue, kn);
-            cb_tenmon.DataSource = dt;
-            cb_tenmon.DisplayMember = "TENMON";
-            cb_tenmon.ValueMember = "ID";
+            DataTable dt = TasmaMain.LietKeDuLieu("DOUONG", "MALOAIDOUONG", cb_loaidouong.SelectedValue, TasmaMain.kn);
+            cb_tendouong.DataSource = dt;
+            cb_tendouong.DisplayMember = "TENDOUONG";
+            cb_tendouong.ValueMember = "ID";
         }
         public int getBill()
         {
-            if (cb_tenmon.Items.Count > 0)
+            if (cb_tendouong.Items.Count > 0)
             {
-                DataTable dt_c = TasmaMain.LietKeDuLieu("MON", "ID", cb_tenmon.SelectedValue, kn);
+                DataTable dt_c = TasmaMain.LietKeDuLieu("DOUONG", "ID", cb_tendouong.SelectedValue, TasmaMain.kn);
                 return Convert.ToInt32(dt_c.Rows[0]["DonGia"]);
             }
             else return 0;
         }
-        private void Admin_Load(object sender, EventArgs e)
-        {
-            DataGV_ThanhVien();
-            CB_LOAIMON();
-        }
-
-        private void rad_nam_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btn_datm_Click(object sender, EventArgs e)
         {
             int tongtien = 0;
             int tongsl = 0;
             Dictionary<string, object> DO = new Dictionary<string, object>();
-            DO.Add("TENMON", cb_tenmon.Text);
+            DO.Add("TENDOUONG", cb_tendouong.Text);
             DO.Add("DONGIA", txt_giatien.Text);
             DO.Add("SOLUONG", nup_slmon.Value);
-            DO.Add("LOAIMON", cb_loaimon.Text);
-            dataGV_cmon.Rows.Add(DO["TENMON"], DO["LOAIMON"], DO["SOLUONG"], DO["DONGIA"]);
-            for (int i = 0; i < dataGV_cmon.Rows.Count - 1; i++)
+            DO.Add("LOAIDOUONG", cb_loaidouong.Text);
+            dataGV_cmon.Rows.Add(DO["TENDOUONG"], DO["LOAIDOUONG"], DO["SOLUONG"], DO["DONGIA"]);
+            for (int i = 0; i < dataGV_cmon.Rows.Count; i++)
             {
                 tongtien += Convert.ToInt32(dataGV_cmon.Rows[i].Cells["DONGIA"].Value);
                 tongsl += Convert.ToInt32(dataGV_cmon.Rows[i].Cells["SOLUONG"].Value);
@@ -226,7 +262,207 @@ namespace QL_quancafe
 
         private void btn_ttmon_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btn_qldu_Click(object sender, EventArgs e)
+        {
+            QLDU qldu = new QLDU();
+            qldu.Show();
+        }
+
+        private void btn_huy_Click(object sender, EventArgs e)
+        {
+            unableText(false);
+            DataGV_ThanhVien();
+            btn_luu.Visible = false;
+            btn_huy.Visible = false;
+            btn_them_tv.Enabled = true;
+        }
+        // ========================================================
+        private void Admin_Load(object sender, EventArgs e)
+        {
+            DataGV_ThanhVien();
+            CB_LOAIMON();
+            DataGV_NV();
+        }
+        // Phần Nhân Viên
+        // ========================================================
+        public static bool gt;
+        public void clearTextNV()
+        {
+            string nv = TasmaMain.LietKeTuDo(
+                "SELECT TOP 1 MaNV FROM NHANVIEN ORDER BY MaNV DESC", 
+                TasmaMain.kn).Rows[0]["MaNV"].ToString().Trim();
+            txt_manv.Text = TasmaMain.IDSinhTruong(
+                (dataGV_NV.Rows.Count > 0) ? nv : "NV000");
+            txt_tennv.Text = "";
+            dtp_ngaysinh.Text = "";
+            dtp_giolv.Text = "";
+            rad_nam.Checked = true;
+        }
+        public void visibleBtnNV(bool check)
+        {
+            btn_luunv.Visible = check;
+            btn_huynv.Visible = check;
+        }
+        public void unableTextNV(bool check)
+        {
+            txt_tennv.Enabled = check;
+            dtp_ngaysinh.Enabled = check;
+            dtp_giolv.Enabled = check;
+            cb_calv.Enabled = check;
+            cb_chucvu.Enabled = check;
+            gr_gioitinh.Enabled = check;
+        }
+        public void unableCBTN_NV(bool check)
+        {
+            btn_themnv.Enabled = check;
+            btn_suanv.Enabled = check;
+            btn_xoanv.Enabled = check;
+            dataGV_NV.Enabled = check;
+        }
+        public void DataGV_NV()
+        {
+            DataTable dt = TasmaMain.LietKeDuLieu("dbo.LK_NHANVIEN()", TasmaMain.kn);
+            dataGV_NV.DataSource = dt;
+            cb_calv.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+        public void Info_NV()
+        {
+            DataGridViewCellCollection info = dataGV_NV.CurrentRow.Cells;
+            txt_manv.Text = info["MaNV"].Value.ToString();
+            txt_tennv.Text = info["TenNV"].Value.ToString();
+            cb_chucvu.DataSource = TasmaMain.LietKeDuLieu("CHUCVU", TasmaMain.kn);
+            cb_chucvu.DisplayMember = "TenCV";
+            cb_chucvu.ValueMember = "MaCV";
+            cb_chucvu.SelectedItem = cb_chucvu.FindStringExact(
+                info["ChucVu"].Value.ToString());
+            if (info["GioiTinh"].Value.ToString() == "Nam")
+                rad_nam.Checked = true;
+            else rad_nu.Checked = true;
+            dtp_ngaysinh.Value = DateTime.Parse(info["NgaySinh"].Value.ToString());
+            dtp_giolv.Value = DateTime.Parse(info["GioLV"].Value.ToString());
+            cb_calv.SelectedItem = info["CaLV"].Value.ToString();
+        }
+    
+
+        private void dataGV_NV_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            Info_NV();
+        }
+
+        private void cb_calv_SelectedIndexChanged(object sender, EventArgs e)
+        {
             
+        }
+
+        private void cb_calv_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_themnv_Click(object sender, EventArgs e)
+        {
+            unableTextNV(true);
+            clearTextNV();
+            visibleBtnNV(true);
+            unableCBTN_NV(false);
+            btn_luunv.Text = "Thêm";
+        }
+
+        private void btn_luunv_Click(object sender, EventArgs e)
+        {
+            if(btn_luunv.Text == "Thêm")
+            {
+                Dictionary<string, object> dl = new Dictionary<string, object>();
+                dl.Add("MaNV", txt_manv.Text);
+                dl.Add("TenNV", txt_tennv.Text);
+                dl.Add("GioiTinh", gt ? 1 : 0);
+                dl.Add("NgaySinh", TasmaMain.StrangeDate(dtp_ngaysinh.Text));
+                dl.Add("MaCV", cb_chucvu.SelectedValue);
+                dl.Add("GioLV", dtp_giolv.Text);
+                dl.Add("CaLV", cb_calv.Text);
+                bool res = TasmaMain.ThemDuLieu("NHANVIEN", dl, TasmaMain.kn);
+                if (res)
+                {
+                    MessageBox.Show("Đã thêm thành công nhân viên " + txt_tennv.Text);
+                    DataGV_NV();
+                    unableCBTN_NV(true);
+                    visibleBtnNV(false);
+                    unableTextNV(false);
+                }
+                else MessageBox.Show("Vui lòng kiểm tra lại dữ liệu vừa nhập");
+            }
+            else
+            {
+                Dictionary<string, object> dl = new Dictionary<string, object>();
+                dl.Add("TenNV", txt_tennv.Text);
+                dl.Add("GioiTinh", gt ? 1 : 0);
+                dl.Add("NgaySinh", TasmaMain.StrangeDate(dtp_ngaysinh.Text));
+                dl.Add("MaCV", cb_chucvu.SelectedValue);
+                dl.Add("GioLV", dtp_giolv.Text);
+                dl.Add("CaLV", cb_calv.Text);
+                bool res = TasmaMain.SuaDuLieu("NHANVIEN", dl, 
+                    "MaNV", txt_manv.Text.Trim(), TasmaMain.kn);
+                if (res)
+                {
+                    MessageBox.Show("Đã sửa thành công thông tin nhân viên " +
+                        txt_tennv.Text);
+                    DataGV_NV();
+                    unableCBTN_NV(true);
+                    visibleBtnNV(false);
+                    unableTextNV(false);
+                }
+                else MessageBox.Show("Vui lòng kiểm tra lại dữ liệu vừa nhập");
+            }
+        }
+
+        private void rad_nam_CheckedChanged(object sender, EventArgs e)
+        {
+            gt = true;
+        }
+
+        private void rad_nu_CheckedChanged(object sender, EventArgs e)
+        {
+            gt = false;
+        }
+
+        private void btn_suanv_Click(object sender, EventArgs e)
+        {
+            visibleBtnNV(true);
+            unableCBTN_NV(false);
+            unableTextNV(true);
+        }
+
+        private void btn_huynv_Click(object sender, EventArgs e)
+        {
+            visibleBtnNV(false);
+            unableCBTN_NV(true);
+            unableTextNV(false);
+            DataGV_NV();
+            Info_NV();
+        }
+
+        private void btn_xoanv_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show(
+             String.Format("Xác nhận xóa nhân viên {0}?", txt_tennv.Text), 
+             "Xóa Nhân Viên", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                bool res = TasmaMain.XoaDuLieu("NHANVIEN", "manv", txt_manv.Text,
+                    TasmaMain.kn);
+                if (res)
+                {
+                    MessageBox.Show("Đã xóa thành công nhân viên " + txt_tennv.Text);
+                    DataGV_NV();
+                }
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                MessageBox.Show("Đã Hủy Thành Công");
+            }
         }
     }
 }
