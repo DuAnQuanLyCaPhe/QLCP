@@ -9,3 +9,8 @@ D:\Program File (K.N)\GitHub\Back-End\C#\TasmaLibrary\TasmaControl\obj\Debug\Tas
 D:\Program File (K.N)\GitHub\Back-End\C#\TasmaLibrary\TasmaControl\obj\Debug\TasmaControl.csproj.CoreCompileInputs.cache
 D:\Program File (K.N)\GitHub\Back-End\C#\TasmaLibrary\TasmaControl\obj\Debug\TasmaControl.dll
 D:\Program File (K.N)\GitHub\Back-End\C#\TasmaLibrary\TasmaControl\obj\Debug\TasmaControl.pdb
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\TasmaControl\bin\Debug\TasmaControl.dll
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\TasmaControl\bin\Debug\TasmaControl.pdb
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\TasmaControl\obj\Debug\TasmaControl.csproj.CoreCompileInputs.cache
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\TasmaControl\obj\Debug\TasmaControl.dll
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\TasmaControl\obj\Debug\TasmaControl.pdb

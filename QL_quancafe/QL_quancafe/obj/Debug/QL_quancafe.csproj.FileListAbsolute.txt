@@ -17,11 +17,9 @@ D:\Quản lý bán hàng\QL_quancafe\QL_quancafe\bin\Debug\Class_QLcafe.pdb
 D:\Quản lý bán hàng\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.CopyComplete
 D:\Quản lý bán hàng\QL_quancafe\QL_quancafe\bin\Debug\MaterialSkin.dll
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.AssemblyReference.cache
-D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.AccountProfile.resources
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.Admin.resources
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.login.resources
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.Properties.Resources.resources
-D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.TableManager.resources
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.GenerateResource.cache
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.csproj.CoreCompileInputs.cache
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.exe
@@ -108,4 +106,4 @@ D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\RdlCompile.cache
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\RdlCompile.compiled
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.HD.resources
-D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.MATHANG.resources
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.MH.resources

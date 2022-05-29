@@ -48,11 +48,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="C:\Users\Admin\source\repos\TasmaControl\TasmaControl\TasmaControl.csproj">
-      <Project>{0b490808-8427-4d7c-b72a-8528652df7d6}</Project>
-      <Name>TasmaControl</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

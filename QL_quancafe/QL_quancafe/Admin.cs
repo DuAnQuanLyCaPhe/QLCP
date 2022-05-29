@@ -204,6 +204,9 @@ namespace QL_quancafe
             cb_loaidouong.DisplayMember = "TENLOAIDOUONG";
             cb_loaidouong.ValueMember = "MALOAIDOUONG";
             CB_MON();
+            cb_thetv.DataSource = TasmaMain.LietKeDuLieu("THANHVIEN", TasmaMain.kn);
+            cb_thetv.DisplayMember = "TenTV";
+            cb_thetv.ValueMember = "MaTV";
         }
         public void CB_MON()
         {
@@ -289,7 +292,15 @@ namespace QL_quancafe
             }
             else btn_datm.Enabled = false;
         }
+        private void check_thetv_CheckedChanged(object sender, EventArgs e)
+        {
+            cb_thetv.Enabled = check_thetv.Checked;
+        }
 
+        private void cb_thetv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
         private void btn_ttmon_Click(object sender, EventArgs e)
         {
             if (txt_ttm.Text != "" && nup_tslm.Value > 0)
@@ -303,7 +314,7 @@ namespace QL_quancafe
                     hd.Rows[0]["MaHoaDon"].ToString().Trim() : "HD000";
                 dl.Add("MAHOADON", TasmaMain.IDSinhTruong(mahd));
                 dl.Add("NGAYLAPHD", TasmaMain.StrangeDate(date));
-                dl.Add("MATV", (check_thetv.Checked) ? txt_thetv.Text : "NULL");
+                dl.Add("MATV", (check_thetv.Checked) ? cb_thetv.SelectedValue : "NULL");
                 dl.Add("TONGTIEN", txt_ttm.Text);
                 //MessageBox.Show(TasmaMain.KT_ThemDuLieu("HOADON", dl));
                 bool res = TasmaMain.ThemDuLieu("HOADON", dl, TasmaMain.kn);
@@ -342,6 +353,7 @@ namespace QL_quancafe
             btn_huy.Visible = false;
             btn_them_tv.Enabled = true;
         }
+
         // ========================================================
         private void Admin_Load(object sender, EventArgs e)
         {
@@ -349,6 +361,9 @@ namespace QL_quancafe
             CB_LOAIMON();
             DataGV_NV();
             DataGV_Kho();
+            cb_chucvu.Items.Add("Sáng");
+            cb_chucvu.Items.Add("Chiều");
+            cb_chucvu.Items.Add("Tối");
         }
         // Phần Nhân Viên
         // ========================================================
@@ -394,20 +409,23 @@ namespace QL_quancafe
         }
         public void Info_NV()
         {
-            DataGridViewCellCollection info = dataGV_NV.CurrentRow.Cells;
-            txt_manv.Text = info["MaNV"].Value.ToString();
-            txt_tennv.Text = info["TenNV"].Value.ToString();
-            cb_chucvu.DataSource = TasmaMain.LietKeDuLieu("CHUCVU", TasmaMain.kn);
-            cb_chucvu.DisplayMember = "TenCV";
-            cb_chucvu.ValueMember = "MaCV";
-            cb_chucvu.SelectedItem = cb_chucvu.FindStringExact(
-                info["ChucVu"].Value.ToString());
-            if (info["GioiTinh"].Value.ToString() == "Nam")
-                rad_nam.Checked = true;
-            else rad_nu.Checked = true;
-            dtp_ngaysinh.Value = DateTime.Parse(info["NgaySinh"].Value.ToString());
-            dtp_giolv.Value = DateTime.Parse(info["GioLV"].Value.ToString());
-            cb_calv.SelectedItem = info["CaLV"].Value.ToString();
+            if(dataGV_NV.Rows.Count > 0)
+            {
+                DataGridViewCellCollection info = dataGV_NV.CurrentRow.Cells;
+                txt_manv.Text = info["MaNV"].Value.ToString();
+                txt_tennv.Text = info["TenNV"].Value.ToString();
+                cb_chucvu.DataSource = TasmaMain.LietKeDuLieu("CHUCVU", TasmaMain.kn);
+                cb_chucvu.DisplayMember = "TenCV";
+                cb_chucvu.ValueMember = "MaCV";
+                cb_chucvu.SelectedItem = cb_chucvu.FindStringExact(
+                    info["ChucVu"].Value.ToString());
+                if (info["GioiTinh"].Value.ToString() == "Nam")
+                    rad_nam.Checked = true;
+                else rad_nu.Checked = true;
+                dtp_ngaysinh.Value = DateTime.Parse(info["NgaySinh"].Value.ToString());
+                dtp_giolv.Value = DateTime.Parse(info["GioLV"].Value.ToString());
+                cb_calv.SelectedItem = info["CaLV"].Value.ToString();
+            }
         }
     
 
@@ -494,6 +512,7 @@ namespace QL_quancafe
 
         private void btn_suanv_Click(object sender, EventArgs e)
         {
+            btn_luunv.Text = "Lưu";
             visibleBtnNV(true);
             unableCBTN_NV(false);
             unableTextNV(true);
@@ -528,6 +547,7 @@ namespace QL_quancafe
                 MessageBox.Show("Đã Hủy Thành Công");
             }
         }
+
         //======================================================================
         //Phần Kho
         public void DataGV_Kho()
@@ -585,6 +605,7 @@ namespace QL_quancafe
 
         private void btn_suakho_Click(object sender, EventArgs e)
         {
+            btn_suakho.Text = "Lưu";
             unableButnKho(false);
             visibleButnKho(true);
             unableTextKho(true);
@@ -668,8 +689,10 @@ namespace QL_quancafe
         private void btn_xemkho_Click(object sender, EventArgs e)
         {
             TasmaMain.SK = txt_sokho.Text;
-            MATHANG mh = new MATHANG();
+            MH mh = new MH();
             mh.Show();
         }
+
+      
     }
 }

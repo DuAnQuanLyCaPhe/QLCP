@@ -63,6 +63,8 @@ namespace QL_quancafe
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
             this.dataGV_ldu = new System.Windows.Forms.DataGridView();
+            this.MaLoaiDU = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenLoaiDoUong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
             this.btn_xoa = new MaterialSkin.Controls.MaterialButton();
@@ -79,8 +81,6 @@ namespace QL_quancafe
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.txt_maloaidu = new MaterialSkin.Controls.MaterialTextBox2();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
-            this.MaLoaiDU = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenLoaiDoUong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.materialCard2.SuspendLayout();
@@ -648,6 +648,20 @@ namespace QL_quancafe
             this.dataGV_ldu.TabIndex = 20;
             this.dataGV_ldu.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGV_ldu_CellEnter);
             // 
+            // MaLoaiDU
+            // 
+            this.MaLoaiDU.DataPropertyName = "MaLoaiDoUong";
+            this.MaLoaiDU.HeaderText = "Mã Loại Đồ Uống";
+            this.MaLoaiDU.Name = "MaLoaiDU";
+            this.MaLoaiDU.ReadOnly = true;
+            // 
+            // TenLoaiDoUong
+            // 
+            this.TenLoaiDoUong.DataPropertyName = "TenLoaiDoUong";
+            this.TenLoaiDoUong.HeaderText = "Tên Loại Đồ Uống";
+            this.TenLoaiDoUong.Name = "TenLoaiDoUong";
+            this.TenLoaiDoUong.ReadOnly = true;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.materialCard4);
@@ -943,18 +957,6 @@ namespace QL_quancafe
             this.materialLabel8.TabIndex = 0;
             this.materialLabel8.Text = "Mã Loại Đồ Uống";
             // 
-            // MaLoaiDU
-            // 
-            this.MaLoaiDU.DataPropertyName = "MaLoaiDoUong";
-            this.MaLoaiDU.HeaderText = "Mã Loại Đồ Uống";
-            this.MaLoaiDU.Name = "MaLoaiDU";
-            // 
-            // TenLoaiDoUong
-            // 
-            this.TenLoaiDoUong.DataPropertyName = "TenLoaiDoUong";
-            this.TenLoaiDoUong.HeaderText = "Tên Loại Đồ Uống";
-            this.TenLoaiDoUong.Name = "TenLoaiDoUong";
-            // 
             // QLDU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -965,6 +967,7 @@ namespace QL_quancafe
             this.DrawerTabControl = this.materialTabControl1;
             this.Name = "QLDU";
             this.Text = "QLDU";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.QLDU_FormClosing);
             this.Load += new System.EventHandler(this.QLDU_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

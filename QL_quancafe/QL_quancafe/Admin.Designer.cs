@@ -96,7 +96,6 @@
             this.materialCard16 = new MaterialSkin.Controls.MaterialCard();
             this.btn_qldu = new MaterialSkin.Controls.MaterialButton();
             this.cardManager = new MaterialSkin.Controls.MaterialCard();
-            this.txt_thetv = new System.Windows.Forms.TextBox();
             this.check_thetv = new MaterialSkin.Controls.MaterialCheckbox();
             this.materialLabel19 = new MaterialSkin.Controls.MaterialLabel();
             this.txt_giatien = new MaterialSkin.Controls.MaterialTextBox();
@@ -153,6 +152,7 @@
             this.NgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayHetHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.cb_thetv = new System.Windows.Forms.ComboBox();
             this.tabPage6.SuspendLayout();
             this.materialCard8.SuspendLayout();
             this.materialCard9.SuspendLayout();
@@ -1229,7 +1229,7 @@
             // cardManager
             // 
             this.cardManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cardManager.Controls.Add(this.txt_thetv);
+            this.cardManager.Controls.Add(this.cb_thetv);
             this.cardManager.Controls.Add(this.check_thetv);
             this.cardManager.Controls.Add(this.materialLabel19);
             this.cardManager.Controls.Add(this.txt_giatien);
@@ -1253,14 +1253,6 @@
             this.cardManager.Size = new System.Drawing.Size(436, 455);
             this.cardManager.TabIndex = 10;
             // 
-            // txt_thetv
-            // 
-            this.txt_thetv.Enabled = false;
-            this.txt_thetv.Location = new System.Drawing.Point(182, 248);
-            this.txt_thetv.Name = "txt_thetv";
-            this.txt_thetv.Size = new System.Drawing.Size(193, 20);
-            this.txt_thetv.TabIndex = 28;
-            // 
             // check_thetv
             // 
             this.check_thetv.AutoSize = true;
@@ -1275,6 +1267,7 @@
             this.check_thetv.Size = new System.Drawing.Size(35, 37);
             this.check_thetv.TabIndex = 27;
             this.check_thetv.UseVisualStyleBackColor = true;
+            this.check_thetv.CheckedChanged += new System.EventHandler(this.check_thetv_CheckedChanged);
             // 
             // materialLabel19
             // 
@@ -2057,6 +2050,17 @@
             this.materialTabControl1.Size = new System.Drawing.Size(946, 517);
             this.materialTabControl1.TabIndex = 0;
             // 
+            // cb_thetv
+            // 
+            this.cb_thetv.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_thetv.Enabled = false;
+            this.cb_thetv.FormattingEnabled = true;
+            this.cb_thetv.Location = new System.Drawing.Point(183, 247);
+            this.cb_thetv.Name = "cb_thetv";
+            this.cb_thetv.Size = new System.Drawing.Size(192, 21);
+            this.cb_thetv.TabIndex = 28;
+            this.cb_thetv.SelectedIndexChanged += new System.EventHandler(this.cb_thetv_SelectedIndexChanged);
+            // 
             // Admin
             // 
             this.AllowDrop = true;
@@ -2256,7 +2260,6 @@
         private MaterialSkin.Controls.MaterialButton btn_huynv;
         private MaterialSkin.Controls.MaterialCheckbox check_thetv;
         private MaterialSkin.Controls.MaterialLabel materialLabel19;
-        private System.Windows.Forms.TextBox txt_thetv;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenDoUong;
         private System.Windows.Forms.DataGridViewTextBoxColumn LoaiDoUong;
@@ -2266,5 +2269,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKho;
         private MaterialSkin.Controls.MaterialCard materialCard20;
         private MaterialSkin.Controls.MaterialButton btn_huykho;
+        private System.Windows.Forms.ComboBox cb_thetv;
     }
 }

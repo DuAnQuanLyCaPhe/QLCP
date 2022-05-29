@@ -45,7 +45,7 @@ namespace QL_quancafe
             DataTable dt = TasmaMain.LietKeDuLieu(
                 String.Format("dbo.LK_DOUONG('{0}')", cb_gv.SelectedValue), TasmaMain.kn);
             dataGV.DataSource = dt;
-            activeInforDU();
+           
         }
         public void activeInforDU()
         {
@@ -139,6 +139,7 @@ namespace QL_quancafe
         }
         private void btn_suadu_Click(object sender, EventArgs e)
         {
+            btn_luu.Text = "Lưu";
             visibleObj(true);
             unableButn(false);
             unableObj(true);
@@ -227,6 +228,7 @@ namespace QL_quancafe
             unableButn(false);
             visibleObjL(true);
             unableObjL(true);
+            btn_luuL.Text = "Lưu";
         }
         private void btn_xoa_Click(object sender, EventArgs e)
         {
@@ -267,6 +269,7 @@ namespace QL_quancafe
                     visibleObjL(false);
                     unableButnL(true);
                     activeDataGVL();
+                    activeDataCBDU();
                 }
                 else MessageBox.Show("Vui lòng kiểm tra lại thông tin vừa nhập");
             }
@@ -292,7 +295,10 @@ namespace QL_quancafe
 
         private void btn_huyL_Click(object sender, EventArgs e)
         {
-
+            unableButnL(true);
+            visibleObjL(false);
+            unableObjL(false);
+            activeInforL();
         }
 
         private void cb_loaidu_SelectedIndexChanged(object sender, EventArgs e)
@@ -303,6 +309,11 @@ namespace QL_quancafe
         private void dataGV_ldu_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
             activeInforL();
+        }
+
+        private void QLDU_FormClosing(object sender, FormClosingEventArgs e)
+        {
+           
         }
     }
 }
