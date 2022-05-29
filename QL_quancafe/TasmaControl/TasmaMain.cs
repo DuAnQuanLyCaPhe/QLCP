@@ -11,7 +11,7 @@ namespace TasmaControl
     {
         public static string HD = "";
         public static string SK = "";
-        public static SqlConnection kn = TasmaMain.ketnoi(@"DESKTOP-MC\SQLEXPRESS", "QL_COFFEE");
+        public static SqlConnection kn = TasmaMain.ketnoi(@"THONG\SQLEXPRESS", "QL_COFFEE");
         public static string StrangeDate(string date)
         {
             string[] dates = date.Split('/');

@@ -9,8 +9,76 @@ D:\Program File (K.N)\GitHub\Back-End\C#\TasmaLibrary\TasmaControl\obj\Debug\Tas
 D:\Program File (K.N)\GitHub\Back-End\C#\TasmaLibrary\TasmaControl\obj\Debug\TasmaControl.csproj.CoreCompileInputs.cache
 D:\Program File (K.N)\GitHub\Back-End\C#\TasmaLibrary\TasmaControl\obj\Debug\TasmaControl.dll
 D:\Program File (K.N)\GitHub\Back-End\C#\TasmaLibrary\TasmaControl\obj\Debug\TasmaControl.pdb
+<<<<<<< HEAD
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\TasmaControl\bin\Debug\TasmaControl.dll
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\TasmaControl\bin\Debug\TasmaControl.pdb
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\TasmaControl\obj\Debug\TasmaControl.csproj.CoreCompileInputs.cache
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\TasmaControl\obj\Debug\TasmaControl.dll
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\TasmaControl\obj\Debug\TasmaControl.pdb
+=======
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\TasmaControl.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\TasmaControl.pdb
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\obj\Debug\TasmaControl.csproj.CoreCompileInputs.cache
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\obj\Debug\TasmaControl.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\obj\Debug\TasmaControl.pdb
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\MaterialSkin.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\obj\Debug\TasmaControl.csproj.CopyComplete
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\EnvDTE.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\stdole.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\Microsoft.MSXML.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\FPTSHOP\OneDrive\Documents\GitHub\QLCP\QLCP\QL_quancafe\TasmaControl\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+>>>>>>> a7db3df592eea7610ff8952c6df3fb8f6a228bb2
