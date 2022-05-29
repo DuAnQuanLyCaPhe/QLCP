@@ -237,13 +237,14 @@ namespace QL_quancafe
             int tongtien = 0;
             int tongsl = 0;
             Dictionary<string, object> DO = new Dictionary<string, object>();
+            DO.Add("ID", cb_tendouong.SelectedValue);
             DO.Add("TENDOUONG", cb_tendouong.Text);
             DO.Add("DONGIA", txt_giatien.Text);
             DO.Add("SOLUONG", nup_slmon.Value);
             DO.Add("LOAIDOUONG", cb_loaidouong.Text);
             if (checkDupli(DO["TENDOUONG"].ToString()) == -1)
             {
-                dataGV_cmon.Rows.Add(DO["TENDOUONG"],
+                dataGV_cmon.Rows.Add(DO["ID"], DO["TENDOUONG"],
                   DO["LOAIDOUONG"], DO["SOLUONG"], DO["DONGIA"]);
             }
             else
@@ -293,8 +294,36 @@ namespace QL_quancafe
         {
             if (txt_ttm.Text != "" && nup_tslm.Value > 0)
             {
-                Bill b = new Bill();
-                b.Show();
+                string date = DateTime.Now.ToShortDateString();
+                DataTable hd = TasmaMain.LietKeTuDo(
+                "SELECT TOP 1 MaHoaDon FROM HOADON ORDER BY MaHoaDon DESC",
+                TasmaMain.kn);
+                Dictionary<string, object> dl = new Dictionary<string, object>();
+                string mahd = (hd.Rows.Count > 0) ? 
+                    hd.Rows[0]["MaHoaDon"].ToString().Trim() : "HD000";
+                dl.Add("MAHOADON", TasmaMain.IDSinhTruong(mahd));
+                dl.Add("NGAYLAPHD", TasmaMain.StrangeDate(date));
+                dl.Add("MATV", (check_thetv.Checked) ? txt_thetv.Text : "NULL");
+                dl.Add("TONGTIEN", txt_ttm.Text);
+                //MessageBox.Show(TasmaMain.KT_ThemDuLieu("HOADON", dl));
+                bool res = TasmaMain.ThemDuLieu("HOADON", dl, TasmaMain.kn);
+                if (res)
+                {
+                    for (int i = 0; i < dataGV_cmon.RowCount; i++)
+                    {
+                        Dictionary<string, object> dlhd = new Dictionary<string, object>();
+                        DataGridViewCellCollection data = dataGV_cmon.Rows[i].Cells;
+                        dlhd.Add("MaHoaDon", dl["MAHOADON"]);
+                        dlhd.Add("ID_DOUONG", data["ID"].Value);
+                        dlhd.Add("DONGIA", data["DONGIA"].Value);
+                        dlhd.Add("SOLUONG", data["SOLUONG"].Value);
+                        TasmaMain.ThemDuLieu("CTHD", dlhd, TasmaMain.kn);
+                    }
+                    TasmaMain.HD = dl["MAHOADON"].ToString();
+                    HD hoadon = new HD();
+                    hoadon.Show();
+                }
+                else MessageBox.Show("Có lỗi xảy ra trong quá trình");
             }
             else MessageBox.Show("Bạn chưa đặt gì cả");
         }
@@ -319,6 +348,7 @@ namespace QL_quancafe
             DataGV_ThanhVien();
             CB_LOAIMON();
             DataGV_NV();
+            DataGV_Kho();
         }
         // Phần Nhân Viên
         // ========================================================
@@ -497,6 +527,149 @@ namespace QL_quancafe
             {
                 MessageBox.Show("Đã Hủy Thành Công");
             }
+        }
+        //======================================================================
+        //Phần Kho
+        public void DataGV_Kho()
+        {
+            dataGV_khoo.DataSource = TasmaMain.LietKeDuLieu("KHO", TasmaMain.kn);
+        }
+        public void infoKho()
+        {
+            if(dataGV_khoo.Rows.Count > 0)
+            {
+                DataGridViewCellCollection data = dataGV_khoo.CurrentRow.Cells;
+                txt_sokho.Text = data["SoKho"].Value.ToString();
+                txt_tenkho.Text = data["TenKho"].Value.ToString();
+            }
+        }
+        public void unableTextKho(bool check)
+        {
+            txt_tenkho.Enabled = check;
+        }
+        public void clearTextKho()
+        {
+            DataTable Kh = TasmaMain.LietKeTuDo(
+               "SELECT TOP 1 SoKho FROM KHO ORDER BY SoKho DESC", TasmaMain.kn);
+            txt_sokho.Text = TasmaMain.IDSinhTruong(
+                (Kh.Rows.Count > 0) ? Kh.Rows[0]["SoKho"].ToString().Trim() : "K000");
+            txt_tenkho.Text = "";
+        }
+        public void unableButnKho(bool check)
+        {
+            btn_themkho.Enabled = check;
+            btn_suakho.Enabled = check;
+            btn_xoakho.Enabled = check;
+            btn_xemkho.Enabled = check;
+            dataGV_khoo.Enabled = check;
+        }
+        public void visibleButnKho(bool check)
+        {
+            btn_luukho.Visible = check;
+            btn_huykho.Visible = check;
+        }
+
+        private void dataGV_khoo_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            infoKho();
+        }
+
+        private void btn_themkho_Click(object sender, EventArgs e)
+        {
+            clearTextKho();
+            unableButnKho(false);
+            visibleButnKho(true);
+            unableTextKho(true);
+            btn_luukho.Text = "Thêm";
+        }
+
+        private void btn_suakho_Click(object sender, EventArgs e)
+        {
+            unableButnKho(false);
+            visibleButnKho(true);
+            unableTextKho(true);
+        }
+        public bool destroyKho()
+        {
+            DataTable dt = TasmaMain.LietKeDuLieu("MATHANG", 
+                "SoKho", txt_sokho.Text, TasmaMain.kn);
+            bool res;
+            if (dt.Rows.Count > 0)
+            {
+                res = TasmaMain.XoaDuLieu("MATHANG", "SoKho", txt_sokho.Text, TasmaMain.kn);
+            }
+            else res = true;
+            return res;
+        }
+        private void btn_xoakho_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show(
+           String.Format("Xác nhận xóa kho {0}?", txt_tenkho.Text),
+           "Xóa Nhân Viên", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                if(destroyKho())
+                {
+                    bool res = TasmaMain.XoaDuLieu("KHO", "SoKho", txt_sokho.Text,
+                    TasmaMain.kn);
+                    if (res)
+                    {
+                        MessageBox.Show("Đã xóa thành công kho " + txt_tenkho.Text);
+                        DataGV_Kho();
+                    }
+                    else MessageBox.Show("Có lỗi xảy ra trong quá trình");
+                } 
+                else MessageBox.Show("Có lỗi xảy ra trong quá trình 1");
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                MessageBox.Show("Đã Hủy Thành Công");
+            }
+        }
+
+        private void btn_luukho_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, object> dl = new Dictionary<string, object>();
+            dl.Add("SoKho", txt_sokho.Text);
+            dl.Add("TenKho", txt_tenkho.Text);
+            if (btn_luukho.Text == "Thêm")
+            {
+                bool res = TasmaMain.ThemDuLieu("KHO", dl, TasmaMain.kn);
+                if (res)
+                {
+                    MessageBox.Show("Đã thêm thành công kho " + txt_tenkho.Text);
+                }
+                else MessageBox.Show("Có lỗi gì đó đã xảy ra khi thêm");
+            }
+            else
+            {
+                bool res = TasmaMain.SuaDuLieu("KHO", dl, "SoKho", 
+                    txt_sokho.Text, TasmaMain.kn);
+                if (res)
+                {
+                    MessageBox.Show("Đã sửa thành công kho " + txt_tenkho.Text);
+                }
+                else MessageBox.Show("Có lỗi gì đó đã xảy ra khi sửa");
+            }
+            unableButnKho(true);
+            visibleButnKho(false);
+            unableTextKho(false);
+            DataGV_Kho();
+        }
+
+        private void btn_huykho_Click(object sender, EventArgs e)
+        {
+            unableButnKho(true);
+            visibleButnKho(false);
+            unableTextKho(false);
+            infoKho();
+        }
+
+        private void btn_xemkho_Click(object sender, EventArgs e)
+        {
+            TasmaMain.SK = txt_sokho.Text;
+            MATHANG mh = new MATHANG();
+            mh.Show();
         }
     }
 }

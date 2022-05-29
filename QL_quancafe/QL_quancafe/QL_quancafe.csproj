@@ -55,7 +55,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -84,17 +84,23 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bill.cs">
+    <Compile Include="HD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bill.Designer.cs">
-      <DependentUpon>Bill.cs</DependentUpon>
+    <Compile Include="HD.Designer.cs">
+      <DependentUpon>HD.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MATHANG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MATHANG.Designer.cs">
+      <DependentUpon>MATHANG.cs</DependentUpon>
     </Compile>
     <Compile Include="Phieunhap.cs">
       <SubType>Form</SubType>
@@ -110,6 +116,11 @@
     <Compile Include="QLDU.Designer.cs">
       <DependentUpon>QLDU.cs</DependentUpon>
     </Compile>
+    <Compile Include="QL_COFFEEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_COFFEEDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="TableManager.cs">
       <SubType>Form</SubType>
@@ -123,11 +134,14 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bill.resx">
-      <DependentUpon>Bill.cs</DependentUpon>
+    <EmbeddedResource Include="HD.resx">
+      <DependentUpon>HD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MATHANG.resx">
+      <DependentUpon>MATHANG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Phieunhap.resx">
       <DependentUpon>Phieunhap.cs</DependentUpon>
@@ -145,9 +159,13 @@
     <EmbeddedResource Include="QLDU.resx">
       <DependentUpon>QLDU.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportV.rdlc" />
     <EmbeddedResource Include="TableManager.resx">
       <DependentUpon>TableManager.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -158,6 +176,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QL_COFFEEDataSet.xsc">
+      <DependentUpon>QL_COFFEEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_COFFEEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_COFFEEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_COFFEEDataSet.xss">
+      <DependentUpon>QL_COFFEEDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -49,7 +49,6 @@ D:\Dự Án Pro Max\QuanLyCaPhe\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quanca
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.QLDU.resources
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\Microsoft.SqlServer.Types.dll
-D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.Bill.resources
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -106,3 +105,7 @@ D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\RdlCompile.cache
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\RdlCompile.compiled
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.HD.resources
+D:\Program File (K.N)\GitHub\Back-End\C#\QLCP\QL_quancafe\QL_quancafe\obj\Debug\QL_quancafe.MATHANG.resources

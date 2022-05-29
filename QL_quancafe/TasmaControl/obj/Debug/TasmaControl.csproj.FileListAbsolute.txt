@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\TasmaControl\TasmaControl\bin\Debug\TasmaControl.dll
+C:\Users\Admin\source\repos\TasmaControl\TasmaControl\bin\Debug\TasmaControl.pdb
+C:\Users\Admin\source\repos\TasmaControl\TasmaControl\obj\Debug\TasmaControl.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\TasmaControl\TasmaControl\obj\Debug\TasmaControl.dll
+C:\Users\Admin\source\repos\TasmaControl\TasmaControl\obj\Debug\TasmaControl.pdb
+D:\Program File (K.N)\GitHub\Back-End\C#\TasmaLibrary\TasmaControl\bin\Debug\TasmaControl.dll
+D:\Program File (K.N)\GitHub\Back-End\C#\TasmaLibrary\TasmaControl\bin\Debug\TasmaControl.pdb
+D:\Program File (K.N)\GitHub\Back-End\C#\TasmaLibrary\TasmaControl\obj\Debug\TasmaControl.csproj.AssemblyReference.cache
+D:\Program File (K.N)\GitHub\Back-End\C#\TasmaLibrary\TasmaControl\obj\Debug\TasmaControl.csproj.CoreCompileInputs.cache
+D:\Program File (K.N)\GitHub\Back-End\C#\TasmaLibrary\TasmaControl\obj\Debug\TasmaControl.dll
+D:\Program File (K.N)\GitHub\Back-End\C#\TasmaLibrary\TasmaControl\obj\Debug\TasmaControl.pdb
